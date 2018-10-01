@@ -1,4 +1,4 @@
-module flipD(
+module ffD(
     D,  //Entry
     E,  //Enable
     Q,  //Output
