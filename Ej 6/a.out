@@ -1,0 +1,25 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x815840 .scope module, "flipD" "flipD" 2 1;
+ .timescale 0 0;
+L_0x847160 .functor NOT 1, C4<z>, C4<0>, C4<0>, C4<0>;
+L_0x847210 .functor AND 1, L_0x847160, C4<z>, C4<1>, C4<1>;
+L_0x8472f0 .functor AND 1, C4<z>, C4<z>, C4<1>, C4<1>;
+L_0x847420 .functor NOR 1, L_0x847210, L_0x8474d0, C4<0>, C4<0>;
+L_0x8474d0 .functor NOR 1, L_0x8472f0, L_0x847420, C4<0>, C4<0>;
+v0x815930_0 .net "D", 0 0, C4<z>; 0 drivers
+v0x846d50_0 .net "E", 0 0, C4<z>; 0 drivers
+v0x846df0_0 .net "Q", 0 0, L_0x847420; 1 drivers
+v0x846e90_0 .net "a", 0 0, L_0x847160; 1 drivers
+v0x846f40_0 .net "b", 0 0, L_0x847210; 1 drivers
+v0x846fe0_0 .net "c", 0 0, L_0x8472f0; 1 drivers
+v0x8470c0_0 .net "nQ", 0 0, L_0x8474d0; 1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "ffD.v";
