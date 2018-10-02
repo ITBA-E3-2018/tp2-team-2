@@ -1,3 +1,5 @@
+`include "latchSR.v"
+
 module ffD(
     D,  //Entry
     E,  //Enable
@@ -13,16 +15,19 @@ input E;
 output Q;
 output nQ;
 
-//Defino Parametros
+//Defino Variables
 wire D,E,Q,nQ;
 
-wire a,b,c;
+wire a;
 
 //Code
 not(a,D);
-and(b,a,E);
-and(c,E,D);
-nor(Q,b,nQ);
-nor(nQ,c,Q);
+latchSR latch(
+    .R(a),
+    .E(E),
+    .S(D),
+    .Q(Q),
+    .nQ(nQ)
+);
 
 endmodule
