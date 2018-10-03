@@ -1,0 +1,9 @@
+1. correr yosys con 
+    yosys
+2. read_verilog module.v
+3. hierarchy -check
+4. proc
+5. opt
+6. fsm
+7. opt
+8. show <module_name>
