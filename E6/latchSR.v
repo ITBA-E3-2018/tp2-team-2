@@ -1,6 +1,6 @@
 module latchSR(
     R,
-    E,
+    clk,
     S,
     Q,
     nQ
@@ -8,7 +8,7 @@ module latchSR(
 
 //Defino Inputs
 input R;
-input E;
+input clk;
 input S;
 
 //Defino Outputs
@@ -16,15 +16,15 @@ output Q;
 output nQ;
 
 //Defino variables
-wire R,E,S;
+wire R,clk,S;
 wire Q,nQ;
 
 wire a,b;
 
 //Code
-and(a,R,E);
-and(b,S,E);
-nor(Q,a,nQ);
-nor(nQ,b,Q);
+and aR(a,R,clk);
+and aS(b,S,clk);
+nor n1(Q,a,nQ);
+nor n2(nQ,b,Q);
 
 endmodule
