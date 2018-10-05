@@ -1,5 +1,5 @@
 `include "latchSR.v"
-//Nota: Hay un glitch
+//Nota: Hay un glitch. No es un glitch. S=1, R=1 es inestable.
 module latchSR_tb;
 
 reg clk, R, S;
