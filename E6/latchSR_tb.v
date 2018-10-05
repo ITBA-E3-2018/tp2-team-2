@@ -1,5 +1,5 @@
 `include "latchSR.v"
-
+//Nota: Hay un glitch
 module latchSR_tb;
 
 reg clk, R, S;
@@ -17,16 +17,15 @@ initial begin
   clk = 1;
   R = 1;
   S = 0;
-  
-  #5 R = 0;
-  #5 S = 1;
-  #5 S = 0;
-  #5 R = 1;
-  #5 R = 0;
+
+  #10 S = 1; R = 0;
+  #10 S = 0; R = 0;
+  #10 S = 1; R = 1;
 end
 
-always
-    #5 clk = !clk;
+always begin
+  #5 clk = !clk;
+end
  
 initial begin
   $dumpfile("latchSR.vcd");
@@ -39,6 +38,6 @@ initial begin
 end
 
 initial
-    #100 $finish;
+    #50 $finish;
 
 endmodule
