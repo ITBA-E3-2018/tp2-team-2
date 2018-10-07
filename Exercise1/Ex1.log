@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.13)  7 OCT 2018 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.13)  7 OCT 2018 17:32
 entering extended mode
 **./Ex1.tex
 (Ex1.tex
@@ -85,18 +85,18 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )) (Ex1.aux)
 \openout1 = `Ex1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
@@ -155,55 +155,55 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Overfull \hbox (7.23796pt too wide) in paragraph at lines 13--13
+Overfull \hbox (7.23796pt too wide) in paragraph at lines 17--17
 [][]\OT1/cmr/bx/n/14.4 Exercise 1: De-sign and Im-ple-men-ta-tion of NOT
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 17.
+(Font)              <10.95> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 17.
+(Font)              <8> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 17.
+(Font)              <6> on input line 21.
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 43--54
+Underfull \hbox (badness 10000) in paragraph at lines 47--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--54
+Underfull \hbox (badness 10000) in paragraph at lines 47--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--54
+Underfull \hbox (badness 10000) in paragraph at lines 47--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--54
+Underfull \hbox (badness 10000) in paragraph at lines 47--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
+Underfull \hbox (badness 10000) in paragraph at lines 65--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
+Underfull \hbox (badness 10000) in paragraph at lines 65--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
+Underfull \hbox (badness 10000) in paragraph at lines 65--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--71
+Underfull \hbox (badness 10000) in paragraph at lines 65--76
 
  []
 
