@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.13)  7 OCT 2018 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2018.4.13)  7 OCT 2018 17:24
 entering extended mode
 **./Ex1.tex
 (Ex1.tex
@@ -167,25 +167,66 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 17.
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (Ex1.aux) ) 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 43--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--71
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--71
+
+ []
+
+[2] [3] (Ex1.aux) ) 
 Here is how much of TeX's memory you used:
  2052 strings out of 493333
  28210 string characters out of 3136611
- 93853 words of memory out of 3000000
+ 95853 words of memory out of 3000000
  5582 multiletter control sequences out of 15000+200000
  7897 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,5n,35p,247b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Ex1.pdf (1 page, 70638 bytes).
+ 40i,5n,35p,363b,117s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Ex1.pdf (3 pages, 99623 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
