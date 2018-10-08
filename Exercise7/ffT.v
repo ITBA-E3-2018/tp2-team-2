@@ -1,4 +1,4 @@
-`include "../E6/latchSR.v"
+`include "../Exercise6/latchSR.v"
 
 module ffT (
     T,  //Toggle
