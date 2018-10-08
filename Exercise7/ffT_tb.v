@@ -5,17 +5,19 @@ module ffT_tb;
 reg clk, T;
 wire q, nq;
 
-ffT test (
+BffT test (
     .T  (T),
-    .E  (clk),
+    .clk(clk),
     .Q  (q),
-    .nQ (nQ)
+    .nQ (nq)
 );
 
 initial begin
   clk = 0;
   T = 0;
-  #20 T = 1;
+  #5 T = 1;
+  #20 T = 0;
+  #40 T = 1;
 end
 
 always
