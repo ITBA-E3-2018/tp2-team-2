@@ -1,0 +1,80 @@
+%AGREGAR:
+%fotos, graficos
+%explicar y mostrar simulaciones
+%comparar para el noise margin la simulacion con las distintas R
+%lo del capacitor de 1 nF
+
+\documentclass[a4paper,11pt]{report}
+
+%\usepackage[options]{package}
+\usepackage{graphicx}
+\usepackage{color} 
+\usepackage[dvipsnames]{xcolor}
+\colorlet{purple}{purple}
+
+\begin{document}
+
+\section{\color{olive}Exercise 1: Design and Implementation of NOT Gates Using Transistors} %Despues borrar el Exercise 1 del titulo y que queden solo los titulos de los ejs en color olive.
+
+
+\subsubsection{\color{red}High-Level and Low-Level Input Voltages}
+The high-level input voltage ($V_{IH}$) es the minimum input voltage that is considered as high, while the low-level input voltage ($V_{IL}$)  is the maximum input voltage that is considered as low.
+
+\subsubsection{\color{red}High-Level and Low-Level Output Voltages}
+The high-level output voltage ($V_{OH}$) is the minimum output voltage that the circuit provides as a high, while the low-level output voltage ($V_{OL}$) is the maximum output voltage that the circuit provides as a low.
+
+\subsubsection{\color{red}Noise Margin}
+The high noise margin ($NM_{H}$) is the gap between the high-level input voltage and the high-level output voltage, while the low noise margin ($NM_{L}$) is the gap between the low-level output voltage and the low-level input voltage.
+$$NM_{H} = V_{OH} - V_{IH}$$
+$$NM_{L} = V_{IL} - V_{OL}$$
+
+\subsubsection{\color{red}Propagation Delays}
+For this assignment's meassures, when the input changes from low to hight and the output from high to low, the high-to-low propagation delay is considered as the time between the moment in which the input voltage reaches the $90\% $ of its maximum high value, until the moment in which the output voltage reaches the $10\%$ of its maximum high value.
+$$t_{pHL} = t_{10\%V_{maxO}} - t_{90\%V_{maxI}}$$
+In the case in which the input goes from high to low and the output from low to high, the low-to-high propagation delay is considered as the time between the moment in which the input voltage reaches the $10\%$ of its maximum high value, until the moment in which the output voltage reaches the $90\%$ of its maximum high value.
+$$t_{pLH} = t_{90\%V_{maxO}} - t_{10\%V_{maxI}}$$
+
+\subsubsection{\color{red}Transition Times}
+The high-to-low transition time or fall time ($t_{f}$) is the time that it takes the output voltage to go from its high maximum value to its low minimum value, while the low-to-high transition time or rise time ($t_{r}$) is the time that it takes for it to change from its low minimum value to tis high maximum value.
+
+
+\subsubsection{\color{red}Maximum Output Current}
+%ESCRIBIR ACA LO DE LA DERIVADA DE LA TENSION EN EL OSCILOSCOPIO
+
+\subsection{\color{purple}Using a BJT NPN 337 Transistor}
+
+\subsubsection{\color{red}Without Load Connected to the Output}
+$V_{IH} = 0,9V$ \\
+$V_{IL} = 0,5V$\\
+$V_{OH} = 4,96V$\\
+$V_{OL} = 100mV$\\ \\
+$NM_{H} = 4,06V$\\ %se pone en VOLTS???????????????????????????
+$NM_{L} = 0,4V$\\ \\ %se pone en VOLTS???????????????????????????
+$t_{pHL} = 87ns$\\
+$t_{pLH} = 2,94\mu s$\\ \\
+$t_{f} = 69,5ns$\\
+$t_{r} = 505ns$\\ \\
+$Maximum Output Current = $ %AGREGAAAAAAAAAAAAAAAAAAAR
+
+\subsubsection{\color{red}With a $1 nF$ Capacitor Connected to the Output}
+%COMPLETAR ESTA PARTE
+
+\subsection{\color{purple}Using a BJT PNP 327 Transistor}
+
+\subsubsection{\color{red}Without Load Connected to the Output}
+$V_{IH} = 4,5V$\\
+$V_{IL} = 4,2V$\\
+$V_{OH} =4,77 $\\
+$V_{OL} = 50mV $\\ \\
+$NM_{H} = 0,27V$\\   %se pone en VOLTS???????????????????????????
+$NM_{L} = 4,15V$\\ \\ %se pone en VOLTS???????????????????????????
+$t_{pHL} = 2,72\mu s$\\
+$t_{pLH} = 73ns$\\ \\
+$t_{f} = 575ns$\\
+$t_{r} = 83ns$\\ \\
+$Maximum Output Current = $ %AGREGAAAAAAAAAAAAAAAAAAAR
+\subsubsection{\color{red}With a $1 nF$ Capacitor Connected to the Output}
+%COMPLETAR ESTA PARTE
+
+
+\end{document} 
