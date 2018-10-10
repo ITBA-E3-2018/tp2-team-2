@@ -1,0 +1,68 @@
+Added Component: Designator=AND(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(BORNERA2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J2(BORNERA2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOR(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOT(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=nQ1(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=nQ2(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Q1(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Q2(0805)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+VCC Pin=AND-14
+Added Pin To Net: NetName=+VCC Pin=J1-1
+Added Pin To Net: NetName=+VCC Pin=NOR-14
+Added Pin To Net: NetName=+VCC Pin=NOT-14
+Added Net: Name=+VCC
+Added Pin To Net: NetName=CLK Pin=AND-1
+Added Pin To Net: NetName=CLK Pin=AND-4
+Added Pin To Net: NetName=CLK Pin=AND-10
+Added Pin To Net: NetName=CLK Pin=AND-13
+Added Pin To Net: NetName=CLK Pin=J2-1
+Added Net: Name=CLK
+Added Pin To Net: NetName=GND Pin=AND-7
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=GND Pin=NOR-7
+Added Pin To Net: NetName=GND Pin=NOT-7
+Added Net: Name=GND
+Added Pin To Net: NetName=NetAND_3 Pin=AND-3
+Added Pin To Net: NetName=NetAND_3 Pin=NOR-3
+Added Net: Name=NetAND_3
+Added Pin To Net: NetName=NetAND_6 Pin=AND-6
+Added Pin To Net: NetName=NetAND_6 Pin=NOR-6
+Added Net: Name=NetAND_6
+Added Pin To Net: NetName=NetAND_8 Pin=AND-8
+Added Pin To Net: NetName=NetAND_8 Pin=NOR-9
+Added Net: Name=NetAND_8
+Added Pin To Net: NetName=NetAND_11 Pin=AND-11
+Added Pin To Net: NetName=NetAND_11 Pin=NOR-12
+Added Net: Name=NetAND_11
+Added Pin To Net: NetName=NetAND_12 Pin=AND-12
+Added Pin To Net: NetName=NetAND_12 Pin=NOT-2
+Added Net: Name=NetAND_12
+Added Pin To Net: NetName=NetNOR_1 Pin=NOR-1
+Added Pin To Net: NetName=NetNOR_1 Pin=NOR-5
+Added Pin To Net: NetName=NetNOR_1 Pin=nQ1-1
+Added Net: Name=NetNOR_1
+Added Pin To Net: NetName=NetNOR_2 Pin=NOR-2
+Added Pin To Net: NetName=NetNOR_2 Pin=NOR-4
+Added Pin To Net: NetName=NetNOR_2 Pin=Q1-1
+Added Net: Name=NetNOR_2
+Added Pin To Net: NetName=NetNOR_8 Pin=NOR-8
+Added Pin To Net: NetName=NetNOR_8 Pin=NOR-13
+Added Pin To Net: NetName=NetNOR_8 Pin=Q2-1
+Added Net: Name=NetNOR_8
+Added Pin To Net: NetName=NetNOR_10 Pin=NOR-10
+Added Pin To Net: NetName=NetNOR_10 Pin=NOR-11
+Added Pin To Net: NetName=NetNOR_10 Pin=nQ2-1
+Added Net: Name=NetNOR_10
+Added Class: Name=LatchSR
+Added Room: Name=LatchSR

@@ -1,0 +1,76 @@
+Removed Member From Class: ClassName=LatchSR Member=nQ1
+Removed Member From Class: ClassName=LatchSR Member=nQ2
+Removed Member From Class: ClassName=LatchSR Member=Q1
+Removed Member From Class: ClassName=LatchSR Member=Q2
+Added Component: Designator=J3(BORNERA5)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Rd(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Rr(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Rs(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Sd(TACTSWITCH)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Sr(TACTSWITCH)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Ss(TACTSWITCH)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=J3-5
+Added Pin To Net: NetName=GND Pin=Rd-1
+Added Pin To Net: NetName=GND Pin=Rr-1
+Added Pin To Net: NetName=GND Pin=Rs-1
+Added Pin To Net: NetName=+VCC Pin=Sd-2
+Added Pin To Net: NetName=+VCC Pin=Sr-2
+Added Pin To Net: NetName=+VCC Pin=Ss-2
+Added Pin To Net: NetName=D&Clk Pin=AND-11
+Added Pin To Net: NetName=D&Clk Pin=NOR-9
+Added Net: Name=D&Clk
+Added Pin To Net: NetName=D Pin=AND-12
+Added Pin To Net: NetName=D Pin=NOT-5
+Added Pin To Net: NetName=D Pin=Rd-2
+Added Pin To Net: NetName=D Pin=Sd-4
+Added Net: Name=D
+Added Pin To Net: NetName=nD&Clk Pin=AND-8
+Added Pin To Net: NetName=nD&Clk Pin=NOR-12
+Added Net: Name=nD&Clk
+Added Pin To Net: NetName=nD Pin=AND-9
+Added Pin To Net: NetName=nD Pin=NOT-6
+Added Net: Name=nD
+Added Pin To Net: NetName=nQd Pin=J3-3
+Added Pin To Net: NetName=nQd Pin=NOR-10
+Added Pin To Net: NetName=nQd Pin=NOR-11
+Added Net: Name=nQd
+Added Pin To Net: NetName=nQrs Pin=J3-2
+Added Pin To Net: NetName=nQrs Pin=NOR-3
+Added Pin To Net: NetName=nQrs Pin=NOR-4
+Added Net: Name=nQrs
+Added Pin To Net: NetName=Qd Pin=J3-4
+Added Pin To Net: NetName=Qd Pin=NOR-8
+Added Pin To Net: NetName=Qd Pin=NOR-13
+Added Net: Name=Qd
+Added Pin To Net: NetName=Qrs Pin=J3-1
+Added Pin To Net: NetName=Qrs Pin=NOR-1
+Added Pin To Net: NetName=Qrs Pin=NOR-6
+Added Net: Name=Qrs
+Added Pin To Net: NetName=R&Clk Pin=AND-6
+Added Pin To Net: NetName=R&Clk Pin=NOR-2
+Added Net: Name=R&Clk
+Added Pin To Net: NetName=R Pin=AND-5
+Added Pin To Net: NetName=R Pin=Rr-2
+Added Pin To Net: NetName=R Pin=Sr-4
+Added Net: Name=R
+Added Pin To Net: NetName=S&Clk Pin=AND-3
+Added Pin To Net: NetName=S&Clk Pin=NOR-5
+Added Net: Name=S&Clk
+Added Pin To Net: NetName=S Pin=AND-2
+Added Pin To Net: NetName=S Pin=Rs-2
+Added Pin To Net: NetName=S Pin=Ss-4
+Added Net: Name=S
+Added Member To Class: ClassName=LatchSR Member=Component J3 BORNERA Salida
+Added Member To Class: ClassName=LatchSR Member=Component Rd RES
+Added Member To Class: ClassName=LatchSR Member=Component Rr RES
+Added Member To Class: ClassName=LatchSR Member=Component Rs RES
+Added Member To Class: ClassName=LatchSR Member=Component Sd TACT SWITCH
+Added Member To Class: ClassName=LatchSR Member=Component Sr TACT SWITCH
+Added Member To Class: ClassName=LatchSR Member=Component Ss TACT SWITCH
