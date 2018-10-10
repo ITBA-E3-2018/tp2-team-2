@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=SET Pin=FLIPFLOPD-4
+Removed Pin From Net: NetName=INPUTUSER Pin=FLIPFLOPD-10
+Added Component: Designator=NAND2(DIP14)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=INPUTUSER Pin=NAND2-1
+Added Pin To Net: NetName=INPUTUSER Pin=NAND2-2
+Added Pin To Net: NetName=SET Pin=NAND2-4
+Added Pin To Net: NetName=SET Pin=NAND2-5
+Added Pin To Net: NetName=GND Pin=NAND2-7
+Added Pin To Net: NetName=VCC Pin=NAND2-14
+Added Pin To Net: NetName=INPUTUSERN Pin=FLIPFLOPD-10
+Added Pin To Net: NetName=INPUTUSERN Pin=NAND2-3
+Added Net: Name=INPUTUSERN
+Added Pin To Net: NetName=SETN Pin=FLIPFLOPD-4
+Added Pin To Net: NetName=SETN Pin=NAND2-6
+Added Net: Name=SETN
+Added Member To Class: ClassName=ELECTRO3 Member=Component NAND2 74HC00
+Added Room: Name=ELECTRO3
