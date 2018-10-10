@@ -61,14 +61,14 @@ wire R,S;
 //Code
 
 initial begin
-    Q = 0;
-    nQ = 1;
+    Q <= 0;
+    nQ <= 1;
 end
 
 always @(posedge clk) begin
     if(T == 1) begin
-        Q = !Q;
-        nQ = !nQ;
+        Q <= !Q;
+        nQ <= !nQ;
     end
 end
 
