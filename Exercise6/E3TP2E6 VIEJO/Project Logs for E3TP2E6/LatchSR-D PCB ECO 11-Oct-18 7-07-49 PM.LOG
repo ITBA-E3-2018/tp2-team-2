@@ -1,0 +1,5 @@
+Change Net Name : Old Net Name=D&Clk New Net Name=DxClk
+Change Net Name : Old Net Name=nD&Clk New Net Name=nDxClk
+Change Net Name : Old Net Name=R&E New Net Name=RxE
+Change Net Name : Old Net Name=S&E New Net Name=SxE
+Added Room: Name=LatchSR

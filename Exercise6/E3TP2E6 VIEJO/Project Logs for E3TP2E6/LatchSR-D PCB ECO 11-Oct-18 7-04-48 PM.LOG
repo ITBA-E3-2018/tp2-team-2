@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=Rd Old Footprint=0805 New Footprint=RES400
+Change Component Footprint: Designator=Rr Old Footprint=0805 New Footprint=RES400
+Change Component Footprint: Designator=Rs Old Footprint=0805 New Footprint=RES400
+Added Room: Name=LatchSR
