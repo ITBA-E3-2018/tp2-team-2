@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=+VCC Pin=J ALIMENTACION?-1
+Removed Pin From Net: NetName=GND Pin=J ALIMENTACION?-2
+Removed Pin From Net: NetName=+VCC Pin=Sd?-2
+Removed Pin From Net: NetName=+VCC Pin=Sr?-2
+Removed Pin From Net: NetName=+VCC Pin=Ss?-2
+Removed Member From Class: ClassName=ShEj6 Member=J ALIMENTACION?
+Added Component: Designator=SOURCE(MOLEX3)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+VCC Pin=SOURCE-1
+Added Pin To Net: NetName=GND Pin=SOURCE-3
+Added Pin To Net: NetName=SWIN Pin=Sd?-2
+Added Pin To Net: NetName=SWIN Pin=SOURCE-2
+Added Pin To Net: NetName=SWIN Pin=Sr?-2
+Added Pin To Net: NetName=SWIN Pin=Ss?-2
+Added Net: Name=SWIN
+Added Member To Class: ClassName=ShEj6 Member=Component SOURCE MOLEX3
+Added Room: Name=ShEj6
