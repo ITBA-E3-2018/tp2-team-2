@@ -1,0 +1,188 @@
+Added Component: Designator=ALIMENTACION(MOLEX2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=AND0(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ANDa0(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ANDa1(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ANDa2(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ANDb1(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=ANDb2(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=IN(MOLEX3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOR0(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOR1(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOR2(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=OUT(MOLEX7)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+VCC Pin=ALIMENTACION-1
+Added Pin To Net: NetName=+VCC Pin=AND0-14
+Added Pin To Net: NetName=+VCC Pin=ANDa0-14
+Added Pin To Net: NetName=+VCC Pin=ANDa1-14
+Added Pin To Net: NetName=+VCC Pin=ANDa2-14
+Added Pin To Net: NetName=+VCC Pin=ANDb1-14
+Added Pin To Net: NetName=+VCC Pin=ANDb2-14
+Added Pin To Net: NetName=+VCC Pin=NOR0-14
+Added Pin To Net: NetName=+VCC Pin=NOR1-14
+Added Pin To Net: NetName=+VCC Pin=NOR2-14
+Added Net: Name=+VCC
+Added Pin To Net: NetName=E Pin=AND0-9
+Added Pin To Net: NetName=E Pin=ANDa0-2
+Added Pin To Net: NetName=E Pin=ANDb1-9
+Added Pin To Net: NetName=E Pin=ANDb2-9
+Added Pin To Net: NetName=E Pin=IN-2
+Added Net: Name=E
+Added Pin To Net: NetName=GND Pin=ALIMENTACION-2
+Added Pin To Net: NetName=GND Pin=AND0-7
+Added Pin To Net: NetName=GND Pin=ANDa0-7
+Added Pin To Net: NetName=GND Pin=ANDa1-7
+Added Pin To Net: NetName=GND Pin=ANDa2-7
+Added Pin To Net: NetName=GND Pin=ANDb1-7
+Added Pin To Net: NetName=GND Pin=ANDb2-7
+Added Pin To Net: NetName=GND Pin=IN-3
+Added Pin To Net: NetName=GND Pin=NOR0-7
+Added Pin To Net: NetName=GND Pin=NOR1-7
+Added Pin To Net: NetName=GND Pin=NOR2-7
+Added Pin To Net: NetName=GND Pin=OUT-7
+Added Net: Name=GND
+Added Pin To Net: NetName=NetAND0_4 Pin=AND0-4
+Added Pin To Net: NetName=NetAND0_4 Pin=NOR0-10
+Added Pin To Net: NetName=NetAND0_4 Pin=NOR0-11
+Added Net: Name=NetAND0_4
+Added Pin To Net: NetName=NetANDb1_4 Pin=ANDb1-4
+Added Pin To Net: NetName=NetANDb1_4 Pin=NOR1-10
+Added Pin To Net: NetName=NetANDb1_4 Pin=NOR1-11
+Added Net: Name=NetANDb1_4
+Added Pin To Net: NetName=NetANDb2_4 Pin=ANDb2-4
+Added Pin To Net: NetName=NetANDb2_4 Pin=NOR2-10
+Added Pin To Net: NetName=NetANDb2_4 Pin=NOR2-11
+Added Net: Name=NetANDb2_4
+Added Pin To Net: NetName=nQ0 Pin=ANDa0-10
+Added Pin To Net: NetName=nQ0 Pin=NOR0-3
+Added Pin To Net: NetName=nQ0 Pin=NOR0-4
+Added Net: Name=nQ0
+Added Pin To Net: NetName=nQ1 Pin=ANDa1-10
+Added Pin To Net: NetName=nQ1 Pin=NOR1-3
+Added Pin To Net: NetName=nQ1 Pin=NOR1-4
+Added Net: Name=nQ1
+Added Pin To Net: NetName=nQ2 Pin=ANDa2-10
+Added Pin To Net: NetName=nQ2 Pin=NOR2-3
+Added Pin To Net: NetName=nQ2 Pin=NOR2-4
+Added Net: Name=nQ2
+Added Pin To Net: NetName=Q0b Pin=AND0-2
+Added Pin To Net: NetName=Q0b Pin=ANDb1-12
+Added Pin To Net: NetName=Q0b Pin=NOR0-8
+Added Pin To Net: NetName=Q0b Pin=NOR0-13
+Added Pin To Net: NetName=Q0b Pin=OUT-4
+Added Net: Name=Q0b
+Added Pin To Net: NetName=Q0 Pin=ANDa0-12
+Added Pin To Net: NetName=Q0 Pin=ANDa1-2
+Added Pin To Net: NetName=Q0 Pin=NOR0-1
+Added Pin To Net: NetName=Q0 Pin=NOR0-6
+Added Pin To Net: NetName=Q0 Pin=OUT-1
+Added Net: Name=Q0
+Added Pin To Net: NetName=Q1b Pin=ANDb1-2
+Added Pin To Net: NetName=Q1b Pin=ANDb2-12
+Added Pin To Net: NetName=Q1b Pin=NOR1-8
+Added Pin To Net: NetName=Q1b Pin=NOR1-13
+Added Pin To Net: NetName=Q1b Pin=OUT-5
+Added Net: Name=Q1b
+Added Pin To Net: NetName=Q1 Pin=ANDa1-12
+Added Pin To Net: NetName=Q1 Pin=ANDa2-2
+Added Pin To Net: NetName=Q1 Pin=NOR1-1
+Added Pin To Net: NetName=Q1 Pin=NOR1-6
+Added Pin To Net: NetName=Q1 Pin=OUT-2
+Added Net: Name=Q1
+Added Pin To Net: NetName=Q2b Pin=ANDb2-2
+Added Pin To Net: NetName=Q2b Pin=NOR2-8
+Added Pin To Net: NetName=Q2b Pin=NOR2-13
+Added Pin To Net: NetName=Q2b Pin=OUT-6
+Added Net: Name=Q2b
+Added Pin To Net: NetName=Q2 Pin=ANDa2-12
+Added Pin To Net: NetName=Q2 Pin=NOR2-1
+Added Pin To Net: NetName=Q2 Pin=NOR2-6
+Added Pin To Net: NetName=Q2 Pin=OUT-3
+Added Net: Name=Q2
+Added Pin To Net: NetName=T1b Pin=ANDb1-10
+Added Pin To Net: NetName=T1b Pin=ANDb1-11
+Added Net: Name=T1b
+Added Pin To Net: NetName=T2b Pin=ANDb2-10
+Added Pin To Net: NetName=T2b Pin=ANDb2-11
+Added Net: Name=T2b
+Added Pin To Net: NetName=T Pin=AND0-10
+Added Pin To Net: NetName=T Pin=ANDa0-1
+Added Pin To Net: NetName=T Pin=ANDa1-1
+Added Pin To Net: NetName=T Pin=ANDa2-1
+Added Pin To Net: NetName=T Pin=ANDb1-13
+Added Pin To Net: NetName=T Pin=ANDb2-13
+Added Pin To Net: NetName=T Pin=IN-1
+Added Net: Name=T
+Added Pin To Net: NetName=TxE0b Pin=AND0-1
+Added Pin To Net: NetName=TxE0b Pin=AND0-5
+Added Pin To Net: NetName=TxE0b Pin=AND0-8
+Added Net: Name=TxE0b
+Added Pin To Net: NetName=TxE0 Pin=ANDa0-3
+Added Pin To Net: NetName=TxE0 Pin=ANDa0-9
+Added Pin To Net: NetName=TxE0 Pin=ANDa0-13
+Added Net: Name=TxE0
+Added Pin To Net: NetName=TxE1b Pin=ANDb1-1
+Added Pin To Net: NetName=TxE1b Pin=ANDb1-5
+Added Pin To Net: NetName=TxE1b Pin=ANDb1-8
+Added Net: Name=TxE1b
+Added Pin To Net: NetName=TxE1 Pin=ANDa1-3
+Added Pin To Net: NetName=TxE1 Pin=ANDa1-9
+Added Pin To Net: NetName=TxE1 Pin=ANDa1-13
+Added Net: Name=TxE1
+Added Pin To Net: NetName=TxE2b Pin=ANDb2-1
+Added Pin To Net: NetName=TxE2b Pin=ANDb2-5
+Added Pin To Net: NetName=TxE2b Pin=ANDb2-8
+Added Net: Name=TxE2b
+Added Pin To Net: NetName=TxE2 Pin=ANDa2-3
+Added Pin To Net: NetName=TxE2 Pin=ANDa2-9
+Added Pin To Net: NetName=TxE2 Pin=ANDa2-13
+Added Net: Name=TxE2
+Added Pin To Net: NetName=TxExnQ0b Pin=AND0-6
+Added Pin To Net: NetName=TxExnQ0b Pin=NOR0-9
+Added Net: Name=TxExnQ0b
+Added Pin To Net: NetName=TxExnQ0 Pin=ANDa0-8
+Added Pin To Net: NetName=TxExnQ0 Pin=NOR0-5
+Added Net: Name=TxExnQ0
+Added Pin To Net: NetName=TxExnQ1b Pin=ANDb1-6
+Added Pin To Net: NetName=TxExnQ1b Pin=NOR1-9
+Added Net: Name=TxExnQ1b
+Added Pin To Net: NetName=TxExnQ1 Pin=ANDa1-8
+Added Pin To Net: NetName=TxExnQ1 Pin=NOR1-5
+Added Net: Name=TxExnQ1
+Added Pin To Net: NetName=TxExnQ2b Pin=ANDb2-6
+Added Pin To Net: NetName=TxExnQ2b Pin=NOR2-9
+Added Net: Name=TxExnQ2b
+Added Pin To Net: NetName=TxExnQ2 Pin=ANDa2-8
+Added Pin To Net: NetName=TxExnQ2 Pin=NOR2-5
+Added Net: Name=TxExnQ2
+Added Pin To Net: NetName=TxExQ0b Pin=AND0-3
+Added Pin To Net: NetName=TxExQ0b Pin=NOR0-12
+Added Net: Name=TxExQ0b
+Added Pin To Net: NetName=TxExQ0 Pin=ANDa0-11
+Added Pin To Net: NetName=TxExQ0 Pin=NOR0-2
+Added Net: Name=TxExQ0
+Added Pin To Net: NetName=TxExQ1b Pin=ANDb1-3
+Added Pin To Net: NetName=TxExQ1b Pin=NOR1-12
+Added Net: Name=TxExQ1b
+Added Pin To Net: NetName=TxExQ1 Pin=ANDa1-11
+Added Pin To Net: NetName=TxExQ1 Pin=NOR1-2
+Added Net: Name=TxExQ1
+Added Pin To Net: NetName=TxExQ2b Pin=ANDb2-3
+Added Pin To Net: NetName=TxExQ2b Pin=NOR2-12
+Added Net: Name=TxExQ2b
+Added Pin To Net: NetName=TxExQ2 Pin=ANDa2-11
+Added Pin To Net: NetName=TxExQ2 Pin=NOR2-2
+Added Net: Name=TxExQ2
+Added Class: Name=Counters
+Added Room: Name=Counters

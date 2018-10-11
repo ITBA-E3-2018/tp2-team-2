@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=E Pin=AND?-1
+Removed Pin From Net: NetName=S Pin=AND?-2
+Added Pin To Net: NetName=S Pin=AND?-1
+Added Pin To Net: NetName=E Pin=AND?-2

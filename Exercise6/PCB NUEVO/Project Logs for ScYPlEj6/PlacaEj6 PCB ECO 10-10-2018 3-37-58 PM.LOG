@@ -1,0 +1,99 @@
+Added Component: Designator=AND?(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=FLIP FLOP D OUT?(MOLEX3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J ALIMENTACION?(MOLEX2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J IN?(MOLEX3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOR?(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOT?(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Rd?(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Rr?(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Rs?(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Sd?(TACTSWITCH)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Sr?(TACTSWITCH)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SR OUT?(MOLEX3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Ss?(TACTSWITCH)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+VCC Pin=AND?-14
+Added Pin To Net: NetName=+VCC Pin=J ALIMENTACION?-1
+Added Pin To Net: NetName=+VCC Pin=NOR?-14
+Added Pin To Net: NetName=+VCC Pin=NOT?-14
+Added Pin To Net: NetName=+VCC Pin=Sd?-2
+Added Pin To Net: NetName=+VCC Pin=Sr?-2
+Added Pin To Net: NetName=+VCC Pin=Ss?-2
+Added Net: Name=+VCC
+Added Pin To Net: NetName=CLK Pin=AND?-10
+Added Pin To Net: NetName=CLK Pin=AND?-13
+Added Pin To Net: NetName=CLK Pin=J IN?-1
+Added Net: Name=CLK
+Added Pin To Net: NetName=D&Clk Pin=AND?-11
+Added Pin To Net: NetName=D&Clk Pin=NOR?-9
+Added Net: Name=D&Clk
+Added Pin To Net: NetName=D Pin=AND?-12
+Added Pin To Net: NetName=D Pin=NOT?-5
+Added Pin To Net: NetName=D Pin=Rd?-2
+Added Pin To Net: NetName=D Pin=Sd?-4
+Added Net: Name=D
+Added Pin To Net: NetName=E Pin=AND?-1
+Added Pin To Net: NetName=E Pin=AND?-4
+Added Pin To Net: NetName=E Pin=J IN?-2
+Added Net: Name=E
+Added Pin To Net: NetName=GND Pin=AND?-7
+Added Pin To Net: NetName=GND Pin=FLIP FLOP D OUT?-3
+Added Pin To Net: NetName=GND Pin=J ALIMENTACION?-2
+Added Pin To Net: NetName=GND Pin=J IN?-3
+Added Pin To Net: NetName=GND Pin=NOR?-7
+Added Pin To Net: NetName=GND Pin=NOT?-7
+Added Pin To Net: NetName=GND Pin=Rd?-1
+Added Pin To Net: NetName=GND Pin=Rr?-1
+Added Pin To Net: NetName=GND Pin=Rs?-1
+Added Pin To Net: NetName=GND Pin=SR OUT?-3
+Added Net: Name=GND
+Added Pin To Net: NetName=nD&Clk Pin=AND?-8
+Added Pin To Net: NetName=nD&Clk Pin=NOR?-12
+Added Net: Name=nD&Clk
+Added Pin To Net: NetName=nD Pin=AND?-9
+Added Pin To Net: NetName=nD Pin=NOT?-6
+Added Net: Name=nD
+Added Pin To Net: NetName=nQd Pin=FLIP FLOP D OUT?-2
+Added Pin To Net: NetName=nQd Pin=NOR?-10
+Added Pin To Net: NetName=nQd Pin=NOR?-11
+Added Net: Name=nQd
+Added Pin To Net: NetName=nQrs Pin=NOR?-3
+Added Pin To Net: NetName=nQrs Pin=NOR?-4
+Added Pin To Net: NetName=nQrs Pin=SR OUT?-2
+Added Net: Name=nQrs
+Added Pin To Net: NetName=Qd Pin=FLIP FLOP D OUT?-1
+Added Pin To Net: NetName=Qd Pin=NOR?-8
+Added Pin To Net: NetName=Qd Pin=NOR?-13
+Added Net: Name=Qd
+Added Pin To Net: NetName=Qrs Pin=NOR?-1
+Added Pin To Net: NetName=Qrs Pin=NOR?-6
+Added Pin To Net: NetName=Qrs Pin=SR OUT?-1
+Added Net: Name=Qrs
+Added Pin To Net: NetName=R&E Pin=AND?-6
+Added Pin To Net: NetName=R&E Pin=NOR?-2
+Added Net: Name=R&E
+Added Pin To Net: NetName=R Pin=AND?-5
+Added Pin To Net: NetName=R Pin=Rr?-2
+Added Pin To Net: NetName=R Pin=Sr?-4
+Added Net: Name=R
+Added Pin To Net: NetName=S&E Pin=AND?-3
+Added Pin To Net: NetName=S&E Pin=NOR?-5
+Added Net: Name=S&E
+Added Pin To Net: NetName=S Pin=AND?-2
+Added Pin To Net: NetName=S Pin=Rs?-2
+Added Pin To Net: NetName=S Pin=Ss?-4
+Added Net: Name=S
+Added Class: Name=ShEj6
+Added Room: Name=ShEj6
