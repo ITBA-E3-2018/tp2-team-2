@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : D:\PCB NUEVO\PlacaEj6.PcbDoc
+Date         : 11/10/2018
+Time         : 09:58:07 p.m.
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100,00%
+    Connections, 39
+    Connections routed, 39
+    Connections remaining, 0
+count : 4

@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=S Pin=R?-2
+Change Component Designator: OldDesignator=AND? NewDesignator=AND1
+Change Component Designator: OldDesignator=FLIP FLOP D OUT? NewDesignator=FLIP FLOP D OUT1
+Change Component Designator: OldDesignator=J IN? NewDesignator=J IN1
+Change Component Designator: OldDesignator=NOR? NewDesignator=NOR1
+Change Component Designator: OldDesignator=NOT? NewDesignator=NOT1
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=Sd? NewDesignator=Sd1
+Change Component Designator: OldDesignator=SOURCE NewDesignator=SOURCE1
+Change Component Designator: OldDesignator=Sr? NewDesignator=Sr1
+Change Component Designator: OldDesignator=SR OUT? NewDesignator=SR OUT1
+Change Component Designator: OldDesignator=Ss? NewDesignator=Ss1
+Added Pin To Net: NetName=R Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=S Pin=R3-2
+Added Member To Class: ClassName=ShEj6 Member=Component R1 Res1
+Added Member To Class: ClassName=ShEj6 Member=Component R3 Res1
+Added Room: Name=ShEj6

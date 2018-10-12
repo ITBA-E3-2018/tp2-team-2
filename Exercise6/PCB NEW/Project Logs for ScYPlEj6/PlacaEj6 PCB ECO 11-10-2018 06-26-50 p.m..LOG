@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=Rd?-1
+Removed Pin From Net: NetName=D Pin=Rd?-2
+Removed Member From Class: ClassName=ShEj6 Member=Rd?
+Added Component: Designator=R?(AXIAL-0.3)
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=D Pin=R?-2
+Added Member To Class: ClassName=ShEj6 Member=Component R? Res1
+Added Room: Name=ShEj6

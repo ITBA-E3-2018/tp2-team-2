@@ -1,0 +1,86 @@
+Added Component: Designator=D1(LED3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D2(LED3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D3(LED3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D4(LED3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D5(LED3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NAND(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=NOR(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R4(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R5(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=VCC-GND(MOLEX2)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=GND Pin=D4-2
+Added Pin To Net: NetName=GND Pin=D5-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=NAND-7
+Added Pin To Net: NetName=GND Pin=NOR-7
+Added Pin To Net: NetName=GND Pin=VCC-GND-2
+Added Net: Name=GND
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R1-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R2-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=R3-2
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=R4-2
+Added Net: Name=NetD4_1
+Added Pin To Net: NetName=NetD5_1 Pin=D5-1
+Added Pin To Net: NetName=NetD5_1 Pin=R5-1
+Added Net: Name=NetD5_1
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-1
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-2
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-4
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-5
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-9
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-10
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-12
+Added Pin To Net: NetName=NetNAND_1 Pin=NAND-13
+Added Pin To Net: NetName=NetNAND_1 Pin=NOR-10
+Added Pin To Net: NetName=NetNAND_1 Pin=R5-2
+Added Net: Name=NetNAND_1
+Added Pin To Net: NetName=NetNAND_3 Pin=NAND-3
+Added Pin To Net: NetName=NetNAND_3 Pin=R1-1
+Added Net: Name=NetNAND_3
+Added Pin To Net: NetName=NetNAND_6 Pin=NAND-6
+Added Pin To Net: NetName=NetNAND_6 Pin=R2-2
+Added Net: Name=NetNAND_6
+Added Pin To Net: NetName=NetNAND_8 Pin=NAND-8
+Added Pin To Net: NetName=NetNAND_8 Pin=R4-1
+Added Net: Name=NetNAND_8
+Added Pin To Net: NetName=NetNAND_11 Pin=NAND-11
+Added Pin To Net: NetName=NetNAND_11 Pin=R3-1
+Added Net: Name=NetNAND_11
+Added Pin To Net: NetName=NetNOR_8 Pin=NOR-8
+Added Pin To Net: NetName=NetNOR_8 Pin=NOR-9
+Added Net: Name=NetNOR_8
+Added Pin To Net: NetName=VCC Pin=J1-1
+Added Pin To Net: NetName=VCC Pin=NAND-14
+Added Pin To Net: NetName=VCC Pin=NOR-14
+Added Pin To Net: NetName=VCC Pin=VCC-GND-1
+Added Net: Name=VCC
+Added Class: Name=ShEj4
+Added Room: Name=ShEj4
