@@ -40,36 +40,73 @@ Q: Final result
     Connecting the circuit like the figure \ref{fig:ej2cir} being X:74HC02 and Y:74LS02, analyzing the possible results we obtain:
 
 \begin{center}
-\begin{table}[]
+\begin{table}[h!]
 \begin{tabular}{llllllllllllllllllll}
 \cline{1-7}
-\multicolumn{1}{|c|}{\multirow{2}{*}{}}                                & \multicolumn{2}{c|}{74HC02}                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{q}}          & \multicolumn{2}{c|}{74LS02}                                          & \multicolumn{1}{c|}{\multirow{2}{*}{Q}}            &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \cline{2-3} \cline{5-6}
-\multicolumn{1}{|c|}{}                                                 & \multicolumn{1}{c|}{Logic Input}        & \multicolumn{1}{c|}{Logic Output}       & \multicolumn{1}{c|}{}                            & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{}                              &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \cline{1-7}
-\multicolumn{1}{|c|}{0\textless{}V\textless{}1.35}                     & \multicolumn{1}{c|}{0}                  & \multicolumn{1}{c|}{1}                  & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5} & \multicolumn{1}{c|}{1}           & \multicolumn{1}{c|}{0}            & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5}   &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \cline{1-7}
-\multicolumn{1}{|c|}{\multirow{3}{*}{1.35\textless{}V\textless{}3.15}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.8} & \multicolumn{1}{c|}{0}           & \multicolumn{1}{c|}{1}            & \multicolumn{1}{c|}{2.7\textless{}V\textless{}5}   &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \cline{4-7}
-\multicolumn{1}{|c|}{}                                                 & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{0.8\textless{}V\textless{}2} & \multicolumn{1}{c|}{?}           & \multicolumn{1}{c|}{?}            & \multicolumn{1}{c|}{0.5\textless{}V\textless{}2.7} &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \cline{4-7}
-\multicolumn{1}{|c|}{}                                                 & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{2\textless{}V\textless{}4.4} & \multicolumn{1}{c|}{1}           & \multicolumn{1}{c|}{0}            & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5}   &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \cline{1-7}
-\multicolumn{1}{|c|}{3.15\textless{}V\textless{}5}                     & \multicolumn{1}{c|}{1}                  & \multicolumn{1}{c|}{0}                  & \multicolumn{1}{c|}{0\textless{}V\textless{}0.1} & \multicolumn{1}{c|}{0}           & \multicolumn{1}{c|}{1}            & \multicolumn{1}{c|}{2.7\textless{}V\textless{}5}   &  &  &  &  &  &  &  &  &  &  &  &  &  \\ \cline{1-7}
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             & \multicolumn{1}{c}{}              &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             & \multicolumn{1}{c}{}              &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             & \multicolumn{1}{c}{}              &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             & \multicolumn{1}{c}{}              &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{c}{}                                                   & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                    & \multicolumn{1}{c}{}                             & \multicolumn{1}{c}{}             &                                   &                                                    &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\multicolumn{1}{|c|}{\multirow{2}{*}{}}                                & \multicolumn{2}{c|}{74HC02}                                                       & \multicolumn{1}{c|}{\multirow{2}{*}{q}}          & \multicolumn{2}{c|}{74LS02}                                          & \multicolumn{1}{c|}{\multirow{2}{*}{Q}}             \\ \cline{2-3} \cline{5-6}
+\multicolumn{1}{|c|}{}                                                 & \multicolumn{1}{c|}{Logic Input}        & \multicolumn{1}{c|}{Logic Output}       & \multicolumn{1}{c|}{}                            & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{}                               \\ \cline{1-7}
+\multicolumn{1}{|c|}{0\textless{}V\textless{}1.35}                     & \multicolumn{1}{c|}{0}                  & \multicolumn{1}{c|}{1}                  & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5} & \multicolumn{1}{c|}{1}           & \multicolumn{1}{c|}{0}            & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5}    \\ \cline{1-7}
+\multicolumn{1}{|c|}{\multirow{3}{*}{1.35\textless{}V\textless{}3.15}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.8} & \multicolumn{1}{c|}{0}           & \multicolumn{1}{c|}{1}            & \multicolumn{1}{c|}{2.7\textless{}V\textless{}5}    \\ \cline{4-7}
+\multicolumn{1}{|c|}{}                                                 & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{0.8\textless{}V\textless{}2} & \multicolumn{1}{c|}{?}           & \multicolumn{1}{c|}{?}            & \multicolumn{1}{c|}{0.5\textless{}V\textless{}2.7}  \\ \cline{4-7}
+\multicolumn{1}{|c|}{}                                                 & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{}                   & \multicolumn{1}{c|}{2\textless{}V\textless{}4.4} & \multicolumn{1}{c|}{1}           & \multicolumn{1}{c|}{0}            & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5}    \\ \cline{1-7}
+\multicolumn{1}{|c|}{3.15\textless{}V\textless{}5}                     & \multicolumn{1}{c|}{1}                  & \multicolumn{1}{c|}{0}                  & \multicolumn{1}{c|}{0\textless{}V\textless{}0.1} & \multicolumn{1}{c|}{0}           & \multicolumn{1}{c|}{1}            & \multicolumn{1}{c|}{2.7\textless{}V\textless{}5}    \\ \cline{1-7}
 \end{tabular}
+\caption{\color{cyan}74HC02 load to 74LS02}
+\label{fig:ej2thhctols}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[h!]
+\begin{tabular}{llllllllllllllllllll}
+\cline{1-7}
+\multicolumn{1}{|c|}{\multirow{2}{*}{}} & \multicolumn{2}{c|}{74LS02} & \multicolumn{1}{c|}{\multirow{2}{*}{q}} & \multicolumn{2}{c|}{74HC02} & \multicolumn{1}{c|}{\multirow{2}{*}{Q}}  \\ \cline{2-3} \cline{5-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{\multirow{2}{*}{0\textless{}V\textless{}0.8}} & \multicolumn{1}{c|}{\multirow{2}{*}{0}} & \multicolumn{1}{c|}{\multirow{2}{*}{1}} & \multicolumn{1}{c|}{2.7\textless{}V\textless{}3.15} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{0.1\textless{}V\textless{}4.4}  \\ \cline{4-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{3.15\textless{}V\textless{}5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.1}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{\multirow{2}{*}{0.8\textless{}V\textless{}2}} & \multicolumn{1}{c|}{\multirow{2}{*}{?}} & \multicolumn{1}{c|}{\multirow{2}{*}{?}} & \multicolumn{1}{c|}{0.5\textless{}V\textless{}1.35} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5}  \\ \cline{4-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{1.35\textless{}V\textless{}2.7} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{0.1\textless{}V\textless{}4.4}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{2\textless{}V\textless{}5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5}  \\ \cline{1-7}
+\end{tabular}
+\caption{\color{cyan}74LS02 load to 74HC02}
+\label{fig:ej2thlstohc}
 \end{table}
 \end{center}
 
 
+\begin{center}
+\begin{table}[h!]
+\begin{tabular}{llllllllllllllllllll}
+\cline{1-7}
+\multicolumn{1}{|c|}{\multirow{2}{*}{}} & \multicolumn{2}{c|}{74LS02} & \multicolumn{1}{c|}{\multirow{2}{*}{q}} & \multicolumn{2}{c|}{74HCT02} & \multicolumn{1}{c|}{\multirow{2}{*}{Q}}  \\ \cline{2-3} \cline{5-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{0\textless{}V\textless{}0.8} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2.7\textless{}V\textless{}5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{\multirow{3}{*}{0.8\textless{}V\textless{}2}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{0.5\textless{}V\textless{}0.8} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5}  \\ \cline{4-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{0.8\textless{}V\textless{}2} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{0.1\textless{}V\textless{}4.4}  \\ \cline{4-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{2\textless{}V\textless{}2.7} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.1}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{2\textless{}V\textless{}5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5}  \\ \cline{1-7}
+\end{tabular}
+\caption{\color{cyan}74LS02 load to 74HCT02}
+\label{fig:ej2thlstohct}
+\end{table}
+\end{center}
+
+
+\begin{center}
+\begin{table}[h!]
+\begin{tabular}{llllllllllllllllllll}
+\cline{1-7}
+\multicolumn{1}{|c|}{\multirow{2}{*}{}} & \multicolumn{2}{c|}{74HCT02} & \multicolumn{1}{c|}{\multirow{2}{*}{q}} & \multicolumn{2}{c|}{74LS02} & \multicolumn{1}{c|}{\multirow{2}{*}{Q}}  \\ \cline{2-3} \cline{5-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{Logic Input} & \multicolumn{1}{c|}{Logic Output} & \multicolumn{1}{c|}{}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{0\textless{}V\textless{}0.8} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{4.4\textless{}V\textless{}5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{\multirow{3}{*}{0.8\textless{}V\textless{}2}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{\multirow{3}{*}{?}} & \multicolumn{1}{c|}{0.1\textless{}V\textless{}0.8} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2.7\textless{}V\textless{}5}  \\ \cline{4-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{0.8\textless{}V\textless{}2} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{?} & \multicolumn{1}{c|}{0.5\textless{}V\textless{}2.7}  \\ \cline{4-7}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{2\textless{}V\textless{}4.4} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.5}  \\ \cline{1-7}
+\multicolumn{1}{|c|}{2\textless{}V\textless{}5} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{0\textless{}V\textless{}0.1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{2.7\textless{}V\textless{}5}  \\ \cline{1-7}
+\end{tabular}
+\caption{\color{cyan}74HCT02 load to 74LS02}
+\label{fig:ej2thhcttols}
+\end{table}
+\end{center}
 
 \end{document}
