@@ -99,7 +99,7 @@ status open
 \begin_inset Graphics
 	filename images/PCB.jpg
 	lyxscale 10
-	scale 10
+	scale 7
 
 \end_inset
 
@@ -704,7 +704,7 @@ The clock was performed also with a NE555 and by following the equation
 \begin_layout Standard
 \begin_inset Formula 
 \[
-T=\frac{1}{(R1+2.R2).C3}
+f=\frac{1}{T}=\frac{1.44}{(R2+2.R1).C3}
 \]
 
 \end_inset
