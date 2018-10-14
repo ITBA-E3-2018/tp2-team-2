@@ -83,7 +83,7 @@ Exersice 3
 \end_layout
 
 \begin_layout Standard
-In this section, we will show how using the lower cost tecnology to implement
+In this section, we will show how using the lower cost technology to implement
  a truth table, can result in some glitches and issues.
  For this exersice, we were asked to simplify the truth Table on Table 
 \begin_inset CommandInset ref
@@ -497,8 +497,8 @@ reference "3_2"
 \end_inset
 
 .
- As we see there, ther are two separate subsets of ones that can represent
- the Table 
+ As we see there, if we do not take into account the yellow minterm, there
+ are two separate subsets of ones that can represent the Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "3_1"
@@ -515,6 +515,17 @@ reference "3_1"
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Karnaugh.pdf
+	lyxscale 20
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -663,6 +674,15 @@ name "3_4"
 \begin_layout Standard
 This little negative peaks shouldn't be there since we were changing from
  one positive state, to another positive state in both cases.
+ To resolve this, we only need to add a third minterm to the equation, and
+ this would be the yellow minterm on Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "3_2"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

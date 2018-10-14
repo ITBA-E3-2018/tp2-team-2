@@ -1,30 +1,9 @@
-%% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-\documentclass[english]{article}
-\usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
-\usepackage{geometry}
-\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=2cm}
-\setlength{\parindent}{0bp}
-\usepackage{float}
-\usepackage{graphicx}
 
-\makeatletter
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
-%% Because html converters don't know tabularnewline
-\providecommand{\tabularnewline}{\\}
-
-\makeatother
-
-\usepackage{babel}
-\begin{document}
-
-\section{Exersice 3}
+\section{Exercise 3}
 
 In this section, we will show how using the lower cost technology
 to implement a truth table, can result in some glitches and issues.
-For this exersice, we were asked to simplify the truth Table on Table
+For this exercise, we were asked to simplify the truth Table on Table
 \ref{3_1}.
 
 \begin{table}[H]
@@ -58,12 +37,16 @@ A & B & C & O\tabularnewline
 \end{table}
 
 When we express this in the form of the Karnaugh map, we'va got the
-Figure \ref{3_2}. As we see there, ther are two separate subsets
-of ones that can represent the Table \ref{3_1}. However, as we know,
-because the two subsets have no element in common, representing this
-truth tables with just two minterms can cause glitches.
+Figure \ref{3_2}. As we see there, if we do not take into account
+the yellow minterm, there are two separate subsets of ones that can
+represent the Table \ref{3_1}. However, as we know, because the two
+subsets have no element in common, representing this truth tables
+with just two minterms can cause glitches.
 
 \begin{figure}[H]
+\begin{centering}
+\includegraphics{images/Karnaugh}
+\par\end{centering}
 \caption{Karnaugh's Map}
 \label{3_2}
 
@@ -94,4 +77,5 @@ on Figure \ref{3_4}.
 
 This little negative peaks shouldn't be there since we were changing
 from one positive state, to another positive state in both cases.
-\end{document}
+To resolve this, we only need to add a third minterm to the equation,
+and this would be the yellow minterm on Figure \ref{3_2}.
