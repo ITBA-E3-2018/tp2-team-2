@@ -1,0 +1,8 @@
+,,SN74HC74,,,Experimental,,,Unit
+,,MIN,NOM,MAX,MIN,NOM,MAX,
+VCC,Supply Voltage,2,5,6,,,,V
+VIH,High-level input voltage,3.15,,,,,,V
+VIL,Low-level input voltage,,,1.35,,,,V
+VI,Input voltage,0,,VCC,,,,V
+VO,Output voltage,0,,VCC,,,,V
+dt/dv,Input transition rise and fall time,,,500,,,,ns
