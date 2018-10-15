@@ -97,9 +97,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename images/PCB.jpg
-	lyxscale 10
-	scale 7
+	filename images/HC-SR04.jpg
+	lyxscale 50
+	scale 20
 
 \end_inset
 
@@ -110,7 +110,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-PCB
+Sensor HC-SR04
 \end_layout
 
 \end_inset

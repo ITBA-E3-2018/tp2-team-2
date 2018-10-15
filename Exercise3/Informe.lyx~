@@ -79,13 +79,13 @@
 \begin_body
 
 \begin_layout Section
-Exersice 3
+Exercise 3
 \end_layout
 
 \begin_layout Standard
 In this section, we will show how using the lower cost technology to implement
  a truth table, can result in some glitches and issues.
- For this exersice, we were asked to simplify the truth Table on Table 
+ For this exercise, we were asked to simplify the truth Table on Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "3_1"
