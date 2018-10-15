@@ -1,13 +1,16 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 \usepackage{graphicx}
 \usepackage{siunitx}
 \usepackage{csvsimple}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage[margin=2.5cm]{geometry}
 
     \begin{document}
         \section{Implementation of Flip-Flop D and SR Latch with discrete logic gates}
         Using the schematic on Figure \ref{fig:Schem} the logic gates were implemented on a PCB.
         
-        \begin{figure}[h]
+        \begin{figure}[h!]
             \begin{center}
                 \includegraphics[width=\linewidth]{e6Schem.png}
                 \caption{Schematic of the  SR Latch (on the left) and Flip-Flop D (on the right)}
@@ -15,14 +18,12 @@
             \label{fig:Schem}
         \end{figure}
 
-        The resulting circuits were tested and compared to their resulting counterparts as shown in Table \ref{tab:e6res}.
-        \begin{table}
+        The resulting circuits were tested and compared to their resulting counterparts as shown in Table \ref{tab:e6t1}.
+        \begin{table}[ht]
             \begin{center}
-                
+                \input{tables/e6tab1.tex}
             \end{center}
-            \label{tab:e6res}
+            \label{tab:e6t1}
         \end{table}
-            
-
-
+        
     \end{document}
