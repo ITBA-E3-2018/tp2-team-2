@@ -11,11 +11,13 @@
 \usepackage{color} 
 \usepackage[dvipsnames]{xcolor}
 \colorlet{purple}{purple}
+\usepackage{textgreek}
 
 \begin{document}
 
 \section{\color{olive}Exercise 1: Design and Implementation of NOT Gates Using Transistors} %Despues borrar el Exercise 1 del titulo y que queden solo los titulos de los ejs en color olive.
 
+The following parameters are important when designing NOT Gates.
 
 \subsubsection{\color{red}High-Level and Low-Level Input Voltages}
 The high-level input voltage ($V_{IH}$) is the minimum input voltage that is considered as high, while the low-level input voltage ($V_{IL}$)  is the maximum input voltage that is considered as low.
@@ -38,23 +40,34 @@ $$t_{pLH} = t_{90\%V_{maxO}} - t_{10\%V_{maxI}}$$
 The high-to-low transition time or fall time ($t_{f}$) is the time that it takes the output voltage to go from its high maximum value to its low minimum value, while the low-to-high transition time or rise time ($t_{r}$) is the time that it takes for it to change from its low minimum value to tis high maximum value.
 
 
-\subsubsection{\color{red}Maximum Output Current}
+\subsubsection {\color{red}Maximum Output Current}
+
+\subsection{\color{purple}NOT Gates' Designs}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{../Exercise1/circuitoNPN}
+\caption{NOT Gate Using a NPN Transistor}
+\label{circNPN}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1]{../Exercise1/circuitoPNP}
+\caption{NOT Gate Using a PNP Transistor}
+\label{circPNP}
+\end{figure}
 %ESCRIBIR ACA LO DE LA DERIVADA DE LA TENSION EN EL OSCILOSCOPIO
+
+Figure \ref{circNPN} represents a NOT gate built with a BJT NPN 337 transistor, while the circuit in Figure \ref{circPNP} corresponds to a NOT gate that uses a BJT PNP 327 transistor. The 4,7k{\textOmega} resistors that appear in both circuits where chosen after simulations made with LTspice. We evaluated how the noise margin changed according to this resistor's value. As it is preffered to have a small noise margin because it corresponds to the "prohibited" voltage values, the 4,7k{\textOmega} resistor was chosen over bigger values.
+
+
+
+ %mostrar simulaciones ACA (HACER DENUEVO LA DE 47K)
 
 \subsection{\color{purple}Measurements}
 
-
-\subsection{\color{purple}Using a BJT NPN 337 Transistor}
-
-\subsubsection{\color{red}Without Load Connected to the Output}
-
-\subsubsection{\color{red}With a $1 nF$ Capacitor Connected to the Output}
-
-
-\subsection{\color{purple}Using a BJT PNP 327 Transistor}
-
-\subsubsection{\color{red}Without Load Connected to the Output}
-
+The parameters defined above were measured for each of the circuits in Figures \ref{circNPN} and \ref{circPNP} in two different conditions: without loading the output and with a $1 nF$ capacitor connected to the output. Te results are shown in the following table. \\
 
 \begin{tabular}{|c|c|c|c|c|}
 \hline
