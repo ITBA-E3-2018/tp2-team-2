@@ -1,0 +1,1010 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Exercise 8
+\end_layout
+
+\begin_layout Standard
+In this section we will explain how we developed the PCB that made the sensor
+ HC-SR04 work using only digital electronics.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/HC-SR04.jpg
+	lyxscale 50
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sensor HC-SR04
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First of all we have to explain how that sensor works.
+\end_layout
+
+\begin_layout Subsection
+Sensor Operation
+\end_layout
+
+\begin_layout Standard
+This sensor has 4 pins, 2 for supply voltage (VCC and GND), and another
+ pair for control, these are 'Trig' and 'Echo'.
+ The operation of this sensor is pretty simple, you have to send a pulse
+ of time greater than 
+\begin_inset Formula $10\mu S$
+\end_inset
+
+ and after some time, it will return into pin Echo, a response pulse of
+ duration that we will call 
+\emph on
+T
+\emph default
+.
+ If we find a method to measure the time 
+\emph on
+T
+\emph default
+, we can calculate the distance measured with the following formula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Distance=\frac{T}{58}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Its important to know that the time 
+\emph on
+T 
+\emph default
+has to be in units of 
+\begin_inset Formula $\mu S$
+\end_inset
+
+ for the formula to work properly, and 
+\emph on
+Distance 
+\emph default
+is in centimeters.
+\end_layout
+
+\begin_layout Standard
+A diagram of this can be found in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/SENSOR DIAGRAM.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sensor Input and output
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "8_2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Components used for this Printed Circuit Board
+\end_layout
+
+\begin_layout Standard
+For this development we utilized the following Integrated Circuits and component
+s:
+\end_layout
+
+\begin_layout Itemize
+74HC4040 Counter 
+\end_layout
+
+\begin_layout Itemize
+74HC74 D-type flip-flop
+\end_layout
+
+\begin_layout Itemize
+Two 74HC00 NAND gates
+\end_layout
+
+\begin_layout Itemize
+Two NE555 Precision Timers
+\end_layout
+
+\begin_layout Itemize
+Seven Capacitors
+\end_layout
+
+\begin_layout Itemize
+Sixteen Resistors
+\end_layout
+
+\begin_layout Itemize
+Two Diodes
+\end_layout
+
+\begin_layout Itemize
+Eight Light Emitting Diodes
+\end_layout
+
+\begin_layout Standard
+The disposition of this elements in the PCB will be explained as we undertand
+ how we made this work.
+\end_layout
+
+\begin_layout Subsection
+PCB Operation
+\end_layout
+
+\begin_layout Standard
+To make this happen, we develop this board that roughly operates as shown
+ in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Diagrama a gran escala.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "8_3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+First, we have a No-Retrigger System (NRS) that filters all the retriggered
+ pulses we have because of buttons, that can make our board function in
+ an unnapropiate way.
+ Then we generate a 
+\begin_inset Formula $50\mu S$
+\end_inset
+
+ pulse with the pulse generator, to send to the Trig pin of the sensor.
+ Once we have the respone of the sensor, we connect the Echo pin with the
+ counter and the measure ready logic.
+ And finally, we plug a visual output to the counter to see the measurement
+ we have made.
+ Every module seen on this diagram, is powered by a 
+\begin_inset Formula $10kHz$
+\end_inset
+
+ clock.
+\end_layout
+
+\begin_layout Subsubsection
+No-Retrigger System operation
+\end_layout
+
+\begin_layout Standard
+This system is powered by a 74HC74 D-type flip flop that with the proper
+ connections we've changed it to an asynchronous SR Flip-Flop(SRFF).
+ To make this, we connected the SRFF pins as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/NO-RETRIGGER SYSTEM.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+No-Retrigger System Connections
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By making this connections we made a feedback with the Q and D pins so by
+ every positive-edge clock Q is maintained to its previous value, unless
+ RESET is on.
+ So, summarizing, by connecting the INPUT pin to the input button, and the
+ RESET pin to the reset button, we've created a No-Retrigger System for
+ our board.
+\end_layout
+
+\begin_layout Subsubsection
+50 Microseconds Pulse Generator
+\end_layout
+
+\begin_layout Standard
+Making this pulse generator was a challenge, but we achieved it by creating
+ two submodules into the 
+\begin_inset Formula $50\mu S$
+\end_inset
+
+ Pulse Generator Module, these are the differentiator circuit, and the pulse
+ generator circuit.
+ Tough the Differentiator Circuit is placed before the Pulse Generator Circuit
+ (PGC), we will explain first the PGC to better understand the utility of
+ the Differentiator.
+\end_layout
+
+\begin_layout Paragraph
+Pulse Generator Circuit
+\end_layout
+
+\begin_layout Standard
+To power this pulse generator we've used a NE555 Precision Timer, that by
+ connecting it as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_5"
+
+\end_inset
+
+, we have made a Pulse generator of the timme we wanted.
+\end_layout
+
+\begin_layout Standard
+The formula to obtain the Pulse time at the output is the following
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T=ln(3)C3.R2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+But there is a problem, this pulse generator only works if the input pulse
+ time is less than the time calculated on the previous formula.
+ So if we have a pulse generated by a human that is oviously greater than
+ 
+\begin_inset Formula $50\mu S$
+\end_inset
+
+ we need a way to make this still work.
+ So here is were the Differentiator Circuit comes to help.
+\end_layout
+
+\begin_layout Paragraph
+Differentiator Circuit
+\end_layout
+
+\begin_layout Standard
+This circuit basically differentiates an input, for us, this means that
+ whenever a pulse its made, a set of dirac's deltas comes out of the circuit,
+ one positive, and another negative.
+ If we define 
+\begin_inset Formula $\tau$
+\end_inset
+
+ as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tau=RC
+\]
+
+\end_inset
+
+ and we choose the apropiate values to the resistor and capacitor to make
+ 
+\begin_inset Formula $5\tau\leq50\mu S$
+\end_inset
+
+ we can have a really good differentiator circuit that for every input pulse,
+ it creates an output of less than 
+\begin_inset Formula $50\mu S$
+\end_inset
+
+, and we can make work our Pulse Generator.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/PULSE GENERATOR.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pulse Generator
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "8_5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Measure Ready Logic
+\end_layout
+
+\begin_layout Standard
+The measure ready logic is powered by a 74HC74 D-type flip flop used equally
+ as the No-Retrigges System, and a differentiator circuit almost as equal
+ as the Pulse generator differentiator circuit.
+ But it has one little difference, the 74HC74 is very sensitive to negative
+ voltage, and it can stop working properly according to its datasheet, so
+ we had to add a little protection to erase the negative delta provided
+ by the differentiator circuit.
+ We made this by simply adding a diode that cancels that delta.
+ So the circuit became as shown in the Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_6"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/MEASURE READY.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Measure Ready Logic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "8_6"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Counter
+\end_layout
+
+\begin_layout Standard
+This circuit was relatively easy since we used a 74HC4040 Counter that was
+ really intuitive to use, it was connected as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_7"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/COUNTER.png
+	lyxscale 50
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Counter
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "8_7"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We implemented the NAND before the CP pin to count only when the Echo is
+ on, and when it becomes off, the counter will stop counting.
+\end_layout
+
+\begin_layout Subsubsection
+Clock
+\end_layout
+
+\begin_layout Standard
+The clock was performed also with a NE555 and by following the equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f=\frac{1}{T}=\frac{1.44}{(R2+2.R1).C3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we made a clock of the period needed.
+ However, due to the resistor and capacitor values we had on the university,
+ we only achieved a 
+\emph on
+T
+\emph default
+ of roughly of 
+\begin_inset Formula $80\mu S$
+\end_inset
+
+ instead of the 
+\begin_inset Formula $100\mu S$
+\end_inset
+
+ we wanted.
+ Since it made no such big difference, we left it that way.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/CLOCK.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Clock
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Visual Output
+\end_layout
+
+\begin_layout Standard
+Finally for this module, we decided to insert a simple array of LEDs displaying
+ in binary code the measurement made by the sensor.
+\end_layout
+
+\begin_layout Subsection
+PCB Fabrication
+\end_layout
+
+\begin_layout Standard
+To fabricate the design explained before, we used Altium 18 to create the
+ schematic and design the PCB.
+ Because of the amount of things taken into account explained before, we
+ decided to implement a double layer PCB, to make this solution fit in an
+ respectable size.
+ Using the default library provided by Altium and the LIBEBAL library, we
+ created the design shown on Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_9"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/PCB Layers.png
+	lyxscale 50
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB Design
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "8_9"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Schematic.pdf
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB Schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/TOP.jpg
+	lyxscale 10
+	scale 5
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB Top Layer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/BOT.jpg
+	lyxscale 10
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB Bottom Layer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ussage
+\end_layout
+
+\begin_layout Standard
+To use this solution one simply has to connect the Board to 5V voltage tension,
+ and press the reset button.
+ Once you are ready to measure, press the Input Button and a measurement
+ in binary code will be displayed in the LEDs placed in the PCB.
+ If we call 
+\emph on
+n
+\emph default
+ the number in decimal obtained by the LEDs, we obtain the measurement by
+ following the next equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Distance=\frac{n.80}{58}(cm)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where the 80 comes from the clock speed and the 58 from the formula giver
+ from the sensor.
+\end_layout
+
+\begin_layout Subsection
+Conclusions
+\end_layout
+
+\begin_layout Standard
+We conclude that the Board behaves as expected, and by adjusting the formula
+ with 80, we can obtain a relatively great measurement of the distance.
+ Because fabrication and design limitations, we decided not to add the measure
+ ready LED to display that.
+ This was because to human perspective, the measurement is practically instant
+ and adding 2 more components to the PCB was not enough gain to make the
+ trouble.
+ However, the Board to our perspective works perfectly.
+\end_layout
+
+\end_body
+\end_document
