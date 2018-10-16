@@ -15,12 +15,12 @@
 
 Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS02, we compare the noise margin between them and analyze the possible results when loading them with each other us follow:
 
-\begin{figure}[h!]
+ \begin{figure}[h!]
         \centering
-        \includegraphics[scale=1]{circuit2.png}
-        \caption{\color{cyan}Loaded Circuit}
-        \label{fig:ej2cir}
-\end{figure}
+        \includegraphics[scale=0.65]{circuit2.png}
+        \caption{\color{cyan}Logical circuit}
+        \label{fig:ej2circuit}
+    \end{figure}
 
 -Input(V): Input voltage; 
 -$X$: First component name; 
@@ -179,8 +179,8 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
         \caption{\color{cyan}74HCT02 load to 74LS02}
         \label{fig:ej2exhcttols}
     \end{figure}
-
-	\pagebreak
+    
+    \pagebreak
 
 	Analyzing the results in $Q$ it is clear that the irregularities are odd to find, this could be because the manufacturer always leaves a bigger margin to ovoid conflicts within each unique component. Moreover as mention in the theoretical table when the input voltage isn't a logical input, in other words the supply voltage is in the prohibited zone because the circuit cannot decide if the the value of the voltage is low or high, the output value $q$ could mean something in the second component leading to misunderstandings or errors in the logical function. In the other hand, we can notice that using the HCT with the LS integrated circuits, their irregularity is lower in amplitude and not so define as HC with LS, cause their input noise margin are similar. 
 
