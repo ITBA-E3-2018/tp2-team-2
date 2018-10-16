@@ -1,0 +1,7 @@
+Symbol,Parameter,MIN,NOM,MAX,MIN_E,NOM_E,MAX_E,Unit
+V_{CC},Supply Voltage,2,5,6,,,,V
+V_{IH},High-level input voltage,3.15,,,,,,V
+V_{IL},Low-level input voltage,,,1.35,,,,V
+V_I,Input voltage,0,,VCC,,,,V
+V_O,Output voltage,0,,VCC,,,,V
+dt/dv,Input transition rise and fall time,,,500,,,,ns

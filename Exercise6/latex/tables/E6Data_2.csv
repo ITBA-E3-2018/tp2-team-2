@@ -1,0 +1,4 @@
+,,Test Conditions,,,V CC,74HC74,,,Experimental,,,Unit
+,,,,,,MIN,TYP,MAX,MIN,TYP,MAX,
+V OH,High-level output voltage,V I = V IH or V IL,I OH = -4 mA,74HC74,4.5 V,3.84,4.3,,,,,V
+V OL,Low-level output voltage,V I = V IH or V IL,I OL = 4 mA,74HC74,4.5 V,,0.17,0.4,,,,V
