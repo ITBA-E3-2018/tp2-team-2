@@ -11,42 +11,38 @@
 
 \section{\color{olive}Exercise 4: Behaviour Analysis of Circuits Including a 74HC02 Gate}
 
-The 74HC02 is an integrated circuit of NOR gates.
+The 74HC02 is an integrated circuit of NOR gates. Firstly, the propagation delays and the transition times are measured for this gate in a no-load output condition. Then these parameters are measured in the case in which the gate is connected in the circuit in Figure. %HACER REFERENCIA A LA FOTITO
+In the following table, the results of the mentioned measures are shown.
  %PONER FOTITO DE LA NOR (no load)
 %foto circuito
 %foto circuito con capacitor
 
-<<<<<<< HEAD
 \subsubsection{\color{red}Propagation and Transition Times' Measurements}
-=======
-\subsubsection{\color{red}Propagation and Transition Time' Measurements}
->>>>>>> a165003b37aae4bba9725ea6e802c80dd8b56c59
 
 \begin{tabular}{|c|c|c|}
+%\label{first meas}
 \hline
- &No-load & Circuit \\ %aclarar haciendo referencia a la foto del circuito
+ &No-load & Loaded with circuit \\ %aclarar haciendo referencia a la foto del circuito
 \hline
 \hline
-$t_{pHL}$ & &  \\
+$t_{pHL}$ & 1,5ns & 1,05ns \\
 \hline
-$t_{pLH}$ &  & \\
+$t_{pLH}$ & 12,5ns & 14,4ns\\
 \hline
-$t_{f}$ &  & \\
+$t_{f}$ & 32ns & 30,7ns\\
 \hline
-$t_{r}$ & & \\
+$t_{r}$ & 41,4ns & 43,2ns \\
 \hline
 \end{tabular}
 
+In the previous table it can be seen that the four parameters remain practically the same while being the 74HC02 in the no-load situation and incorporated in the circuit. However, the small differences have opposite behaviours depending on the input signal's edge. In the case of a rising edge in the input signal, the propagation delay $t_{pLH}$ and the transition time $t_{r}$ are bigger if the 74HC02 forms part of the circuit, than if the 74HC02 is in a no-load situation.
 
 \subsubsection{\color{red}Circuit's Response to Frequency Increment}
 
 
-<<<<<<< HEAD
-=======
+
 \subsubsection{\color{red}Alimentation Voltage and Temperature of the IC}
 
-
->>>>>>> a165003b37aae4bba9725ea6e802c80dd8b56c59
 
 Se pone un capacitor de desacople para que cuando se pida corriente, la fuente VCC no sea alterada creando ripples no deaseados 
 
