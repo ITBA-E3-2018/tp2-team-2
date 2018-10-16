@@ -39,7 +39,9 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
         \label{fig:ej2thnm}
     \end{figure}
     
-    Connecting the circuit like the figure \ref{fig:ej2cir} being X the second column and Y the forth column, analyzing the possible results we obtain:
+    Within the mentioned values of power supply, the fanout of the components were: 74HC02 and 74HCT02 are 20, with $I_l =\pm1{\mu}A$ and $I_o=-20{\mu}A$; and 74LS02 is 80, with $I_l =0.1mA$ and $I_o=8mA$.
+    
+    Connecting the circuit like the figure \ref{fig:ej2cir} being X the second column and Y the forth column, analyzing the possible results would be:
 
 	\begin{center}
 	\begin{table}[h!]
@@ -117,12 +119,12 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
 	
 	\begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.2]{HC-LS-5V.png}\hspace{1cm}
-        \includegraphics[scale=0.2]{HC-LS-3V.png}\\
+        \includegraphics[scale=0.19]{HC-LS-5V.png}\hspace{1cm}
+        \includegraphics[scale=0.19]{HC-LS-3V.png}\\
 		\vspace{0.2cm}
 		\hspace{0.9cm}
-	   \includegraphics[scale=0.2]{HC-LS-2p3V.png}\hspace{1cm}
-        \includegraphics[scale=0.2]{HC-LS-2V.png}\hspace{1cm}
+	   \includegraphics[scale=0.19]{HC-LS-2p3V.png}\hspace{1cm}
+        \includegraphics[scale=0.19]{HC-LS-2V.png}\hspace{1cm}
         \caption{\color{cyan}74HC02 load to 74LS02}
         \label{fig:ej2exhctols}
     \end{figure}
@@ -142,6 +144,7 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
         \label{fig:ej2exlstohc}
     \end{figure}
     
+%    \pagebreak
     \begin{figure}[h!]
         \centering
         \includegraphics[scale=0.19]{LS-HCT-5V.png}\hspace{1cm}
@@ -159,19 +162,22 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
 
     \begin{figure}[h!]
         \centering
-        \includegraphics[scale=0.19]{HCT-LS-5V.png}\hspace{1cm}
+        \includegraphics[scale=0.18]{HCT-LS-5V.png}\hspace{1cm}
         \includegraphics[scale=0.19]{HCT-LS-3V.png}\\
 		\vspace{0.2cm}
 %		\hspace{0.9cm}
-	   \includegraphics[scale=0.19]{HCT-LS-1p8V.png}\hspace{1cm}
+	   \includegraphics[scale=0.18]{HCT-LS-1p8V.png}\hspace{1cm}
 	   \includegraphics[scale=0.19]{LS-HCT-1p1V.png}\\
 	   \vspace{0.2cm}
 %		\hspace{0cm}
-        \includegraphics[scale=0.19]{HCT-LS-1V.png}\hspace{1cm}
-        \includegraphics[scale=0.19]{HCT-LS-0p6V.png}
+        \includegraphics[scale=0.18]{HCT-LS-1V.png}\hspace{1cm}
+        \includegraphics[scale=0.18]{HCT-LS-0p6V.png}
         \caption{\color{cyan}74HCT02 load to 74LS02}
         \label{fig:ej2exhcttols}
     \end{figure}
 
+	\pagebreak
+
+	Analyzing the results in $Q$ it is clear that the irregularities are odd to find, this could be because the manufacturer always leaves a bigger margin to ovoid conflicts within each unique component. Moreover as mention in the theoretical table when the input voltage isn't a logical input, in other words the supply voltage is in the prohibited zone because the circuit cannot decide if the the value of the voltage is low or high, the output value $q$ could mean something in the second component leading to misunderstandings or errors in the logical function. In the other hand, we can notice that using the HCT with the LS integrated circuits, their irregularity is lower in amplitude and not so define as HC with LS, cause their input noise margin are similar. 
 
 \end{document}
