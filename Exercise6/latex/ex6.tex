@@ -4,6 +4,7 @@
 \usepackage{csvsimple}
 \usepackage{multirow}
 \usepackage{booktabs}
+\usepackage{amsmath,amsfonts,mathtools}
 \usepackage[margin=2.5cm]{geometry}
 
     \begin{document}
@@ -18,7 +19,8 @@
             \label{fig:Schem}
         \end{figure}
 
-        The resulting circuits were tested and compared to their resulting counterparts as shown in Table \ref{tab:e6t1}.
+        The resulting circuits were tested and compared to their resulting counterparts as shown in
+        Tables \ref{tab:e6t1}, \ref{tab:e6t2}, \ref{tab:e6t3} and \ref{tab:e6t4}.
         \begin{table}[ht]
             \begin{center}
                 \input{tables/e6tab1.tex}
@@ -31,5 +33,16 @@
             \end{center}
             \label{tab:e6t2}
         \end{table}
-        
+        \begin{table}[ht]
+            \begin{center}
+                \input{tables/e6tab3.tex}
+            \end{center}
+            \label{tab:e6t3}
+        \end{table}
+        \begin{table}[ht]
+            \begin{center}
+                \input{tables/e6tab4.tex}
+            \end{center}
+            \label{tab:e6t4}
+        \end{table}
     \end{document}
