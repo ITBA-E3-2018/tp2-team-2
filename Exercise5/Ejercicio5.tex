@@ -11,8 +11,39 @@
 %
 %Test Text
 
-\section{\color{olive}Exercise 5: Analyzing TTL and CMOS}
+\section{\color{olive}Exercise 5: Compatibility between TTL and CMOS}
 
+Connecting the following circuit in figure \ref{fig:ej5ttl} and \ref{fig:ej5cmos} leaving one of the inputs floating having $Vcc = 5V$. 
+
+\begin{figure}[h!]
+         \begin{minipage}{.47\linewidth}
+        \centering
+        \includegraphics[width=.6\linewidth]{./TTL5.png}
+        \caption{\color{cyan}TTL Circuit}
+        \label{fig:ej5ttl}
+        \end{minipage}
+         \begin{minipage}{.5\linewidth}
+        \centering
+        \includegraphics[width=.5\linewidth]{./CMOS5.png}
+        \caption{\color{cyan}CMOS Circuit}
+        \label{fig:ej5cmos}
+    \end{minipage}
+\end{figure}
+
+For the 74LS08, the TTL component, the output port value shown was a logical 1 constantly. On the other hand, the 74HC32, the CMOS component, the results were random at a frequency of 50Hz, having variation from being a quadratic function from 0 to 5V, a 
+
+\begin{figure}[h!]
+        \centering
+        \includegraphics[scale=0.19]{cmos_cerda2.png}\hspace{1cm}
+%        \includegraphics[scale=0.19]{HC-LS-2V.png}\\
+        \includegraphics[scale=0.2]{cmos_dads.jpeg}\\
+		\vspace{0.2cm}
+%		\hspace{0.9cm}
+	   \includegraphics[scale=0.19]{cmos_ahifdas.jpeg} 
+%        \includegraphics[scale=0.19]{HC-LS-2p3V.png}
+        \caption{\color{cyan}74HC02 load to 74LS02}
+        \label{fig:ej2exhctols}
+    \end{figure}
 
 
 \end{document}
