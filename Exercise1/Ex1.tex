@@ -4,14 +4,16 @@
 %comparar para el noise margin la simulacion con las distintas R
 %lo del capacitor de 1 nF
 
-\documentclass[a4paper,11pt]{report}
-
+%\documentclass[a4paper,11pt]{report}
+%
 %\usepackage[options]{package}
-\usepackage{graphicx}
-\usepackage{color} 
-\usepackage[dvipsnames]{xcolor}
-\colorlet{purple}{purple}
-\usepackage{textgreek}
+%\usepackage{graphicx}
+%\usepackage{color} 
+%\usepackage[dvipsnames]{xcolor}
+%\colorlet{purple}{purple}
+%\usepackage{textgreek}
+
+\input{./preamble.tex}
 
 \begin{document}
 
@@ -41,6 +43,28 @@ The high-to-low transition time or fall time ($t_{f}$) is the time that it takes
 
 
 \subsubsection {\color{red}Maximum Output Current}
+The maximum output current the circuit provides in the output, which will take place when there is a capacitor, is calculated from the equation:
+$${I_C}=C\frac{dVc}{dt}$$
+Where the maximum output current of the circuit will take place when there is a change in the voltage, form high to low or low to high. 
+
+ESTO ES NPN PARA MAX CURRENT
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{../Exercise1/i_npn2.png}\hspace{1cm}
+\includegraphics[scale=0.3]{../Exercise1/i_npn3.png}
+\caption{NPN Maximun output current}
+\label{circnpnmaxout}
+\end{figure}
+
+ESTO ES PNP PARA MAX CURRENT
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{../Exercise1/i_pnp.png}\hspace{1cm}
+\includegraphics[scale=0.3]{../Exercise1/i_pnp1.png}
+\caption{PNP Maximun output current}
+\label{circpnpmaxout}
+\end{figure}
+
 
 \subsection{\color{purple}NOT Gates' Designs}
 
@@ -60,7 +84,7 @@ The high-to-low transition time or fall time ($t_{f}$) is the time that it takes
 %ESCRIBIR ACA LO DE LA DERIVADA DE LA TENSION EN EL OSCILOSCOPIO
 
 <<<<<<< Updated upstream
-Figure \ref{circNPN} represents a NOT gate built with a BJT NPN 337 transistor, while the circuit in Figure \ref{circPNP} corresponds to a NOT gate that uses a BJT PNP 327 transistor. The 4,7k{\textOmega} resistors that appear in both circuits where chosen after simulations made with LTspice. We evaluated how the noise margin changed according to this resistor's value. As it is preffered to have a small noise margin because it corresponds to the "prohibited" voltage values, the 4,7k{\textOmega} resistor was chosen over bigger values.
+Figure \ref{circPNP} represents a NOT gate built with a BJT NPN 337 transistor, while the circuit in Figure \ref{circPNP} corresponds to a NOT gate that uses a BJT PNP 327 transistor. The $4,7k{\Omega}$ resistors that appear in both circuits where chosen after simulations made with LTspice. We evaluated how the noise margin changed according to this resistor's value. As it is preffered to have a small noise margin because it corresponds to the "prohibited" voltage values, the $4,7k{\Omega}$ resistor was chosen over bigger values.
 
 
 
@@ -114,6 +138,10 @@ $t_{r}$ & 505ns & 520ns & 83ns & 86 ns\\
 $ I_{Out{Max}}$ &   &   &   &   \\ %AGREGAAAAAAAAAAAAAAAAAAAR
 \hline
 \end{tabular}
+
+
+
+
 
 \end{document} 
 
