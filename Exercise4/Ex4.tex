@@ -37,21 +37,21 @@ $t_{r}$ & 41,4ns & 43,2ns \\
 
 
 
-In the previous table it can be seen that the four parameters remain practically the same while being the 74HC02 in the no-load situation and incorporated in the circuit. However, the small differences have opposite behaviours depending on the input signal's edge. In the case of a rising edge in the input signal, the propagation delay $t_{pLH}$ and the transition time $t_{r}$ are bigger if the 74HC02 forms part of the circuit, than if the 74HC02 is in a no-load situation. But the opposite occurs with the falling edge of the input. The propagation delay $t_{pHL}$ and the transition time $t_{f}$ are smaller when the 74HC00 forms part of the circuit in comparisson to when the no-load situation.
+In the previous table it can be seen that the four parameters remain practically the same while being the 74HC02 in the no-load situation and incorporated in the circuit. However, the small differences have opposite behaviours depending on the input signal's edge. In the case of a rising edge in the input signal, the propagation delay $t_{pLH}$ and the transition time $t_{r}$ are bigger if the 74HC02 forms part of the circuit, than if the 74HC02 is in a no-load situation. But the opposite occurs with the falling edge of the input. This is probably caused by the bigger capacitance in the wires and in the components of the circuit.
 
 \subsubsection{\color{red}Circuit's Response to Frequency Increment}
 
 No significable temperature changes were noticed in the integrated circuits nor in any component of the entire circuit.
-The power discipated by the integrated circuit depends of $f^{2}$, and therefore, a temperature augmentation should be perceived by increasing the frequency from 1Hz to 100kHz. However, no significable temperature changes were noticed in the integrated circuits nor in any component of the entire circuit. Only a small temperature increase was perceived.
-%buscar info de que depende la potencia discipada y hablar de eso 
-% buscar formula de la potencia discipada por un chip. y ver de que parametros depende y de que forma.
+The dynamic power is the power dissipated when changing from one state to another. The power discipated by the integrated circuit depends of the input signal's frequency as the dynamic power is $P_{D}=fCV_{DD}^{2}$; being $f$ the input frequency, $C$ the circuit's capacitance and $V_{DD}$=5V. Therefore, a temperature augmentation should be perceived by increasing the frequency from 1Hz to 100kHz. However, no significable temperature changes were noticed in the integrated circuit nor in any component of the entire circuit. Only a small temperature increase was perceived.
 
 
-\subsubsection{\color{red}Alimentation Voltage and Temperature of the IC}
+
+\subsubsection{\color{red}Alimentation Voltage of the IC}
 
 It is seen in the osciloscope that the alimentation voltage of the circuit in Figure %AGREGAR REFERENCIA
 has a ripple when there is an edge of the square input signal. This is due to the big ammount of current that the integrated circuit of NOR gates demands from the voltage source when the input signal rises from 0V to 5V or when it falls from 5V to 0V. 
-In order to reduce this "ripple-shape" response of the circuits to such edges, a capacitor has to be added between the +Vcc and the GND terminals of the integrated circuit. The goal is to add a capacitor in a way that the less inductance is added to the circuit. This capacitor has to be the nearest possible to such terminals, to avoid adding long wires that add inductance. Moreover,  the best capacitors' technology for this case is the multilayer capacitor as it doesn't add as much inductance as other types of capacitors. As it is preffered to use a multilayer capacitor between 10nF and 100nF for this situation, we decided to use a 100nF capacitor and the ripple decreased, as it can be seen in Figure %AGREGAR REF (usar palabra desacople en ingles)
+In order to reduce this "ripple-shape" response of the circuits to such edges, a capacitor has to be added between the +Vcc and the GND terminals of the integrated circuit. The goal is to add a capacitor in a way that the less inductance is added to the circuit. This capacitor has to be the nearest possible to such terminals, to avoid adding long wires that add inductance. Moreover,  the best capacitors' technology for this case is the multilayer capacitor as it doesn't add as much inductance as other technologies of this component. As it is preffered to use a multilayer capacitor between 10nF and 100nF for this situation, we decided to use a 100nF capacitor for the ripple to decrease, as it can be seen in Figure %AGREGAR REF (usar palabra desacople en ingles)
+By adding the capacitor, again, no significant temperature changes are noticed while varying the input signal's frequency, although when the circuit's capacitance increases, the dynamic power varies too.
 
 
 \end{document} 
