@@ -1,11 +1,11 @@
-\section{Exercise 3}
+\section{\color{olive}Exercise 3: Simplification and Implementation of a Truth Table }
 
 In this section, we will show how using the lower cost technology
 to implement a truth table, can result in some glitches and issues.
 For this exercise, we were asked to simplify the truth Table on Table
-\ref{3_1}.
+\ref{3_1}
 
-\begin{table}[H]
+\begin{table}[h!]
 \begin{centering}
 \begin{tabular}{|c|c|c|c|}
 \hline 
@@ -42,9 +42,9 @@ represent the Table \ref{3_1}. However, as we know, because the two
 subsets have no element in common, representing this truth tables
 with just two minterms can cause glitches.
 
-\begin{figure}[H]
+\begin{figure}[h!]
 \begin{centering}
-\includegraphics{images/Karnaugh}
+\includegraphics{../Exercise3/images/Karnaugh}
 \par\end{centering}
 \caption{Karnaugh's Map}
 \label{3_2}
@@ -54,9 +54,9 @@ with just two minterms can cause glitches.
 By implementing this wit NAND gates we've got the circuit shown on
 Figure \ref{3_3}.
 
-\begin{figure}[H]
+\begin{figure}[h!]
 \begin{centering}
-\includegraphics[scale=0.3]{images/CIRCUIT}
+\includegraphics[scale=0.3]{../Exercise3/images/CIRCUIT}
 \par\end{centering}
 \caption{NAND Circuit Implementation}
 \label{3_3}
@@ -67,9 +67,9 @@ Finally, when we tried to test the circuit shown, we noticed some
 glitches of time less than 10 micorseconds, thes glitches are shown
 on Figure \ref{3_4}.
 
-\begin{figure}[H]
+\begin{figure}[h!]
 \begin{centering}
-\includegraphics[scale=0.2]{images/e3}\includegraphics[scale=0.2]{images/e4}
+\includegraphics[scale=0.2]{../Exercise3/images/e3}\includegraphics[scale=0.2]{../Exercise3/images/e4}
 \par\end{centering}
 \caption{Glitches}
 \label{3_4}
