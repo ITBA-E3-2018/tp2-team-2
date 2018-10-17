@@ -1,0 +1,145 @@
+$date
+	Wed Oct 17 13:46:10 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100us
+$end
+$scope module main $end
+$var wire 1 ! out1 $end
+$var wire 8 " count [7:0] $end
+$var wire 1 # clk $end
+$var reg 1 $ dummy $end
+$var reg 513 % dumpfile_path [512:0] $end
+$var reg 1 & echo $end
+$var reg 1 ' reset $end
+$scope module clk_gen $end
+$var reg 1 # clk $end
+$scope begin CLOCK_DRIVER $end
+$upscope $end
+$upscope $end
+$scope module my_counter $end
+$var wire 1 ! clk $end
+$var wire 1 ' reset $end
+$var reg 8 ( out [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+0'
+x&
+b1101111011101010111010001110000011101010111010000101110011101100110001101100100 %
+0$
+0#
+bx "
+1!
+$end
+#1
+b0 "
+b0 (
+1'
+#5
+x!
+1#
+#10
+1!
+0#
+#11
+0'
+#15
+x!
+1#
+#20
+b1 "
+b1 (
+1!
+0#
+#21
+1&
+#25
+0!
+1#
+#30
+b10 "
+b10 (
+1!
+0#
+#35
+0!
+1#
+#40
+b11 "
+b11 (
+1!
+0#
+#45
+0!
+1#
+#50
+b100 "
+b100 (
+1!
+0#
+#55
+0!
+1#
+#60
+b101 "
+b101 (
+1!
+0#
+#65
+0!
+1#
+#70
+b110 "
+b110 (
+1!
+0#
+#71
+0&
+#75
+1#
+#80
+0#
+#85
+1#
+#90
+0#
+#95
+1#
+#100
+0#
+#105
+1#
+#110
+0#
+#115
+1#
+#120
+0#
+#125
+1#
+#130
+0#
+#135
+1#
+#140
+0#
+#145
+1#
+#150
+0#
+#155
+1#
+#160
+0#
+#165
+1#
+#170
+0#
+#171
