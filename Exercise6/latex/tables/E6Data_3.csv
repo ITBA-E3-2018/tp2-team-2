@@ -1,8 +1,0 @@
-,,,V CC,74HC74,,EXPERIMENTAL,,
-,,,,MIN,MAX,MIN,MAX,UNIT
-f clock,Clock frequency,,4.5 V,0,21,,,MHz
-t w,Pulse duration,n(PRE) or n(CLR) low,4.5 V,30,,,,ns
-,,CLK high or low,4.5 V,24,,,,ns
-t su,Setup time before CLK^,Data,4.5 V,30,,,,ns
-,,n(PRE) or n(CLR) inactive,4.5 V,8,,,,ns
-t h,"Hold time, data after CLK^",,4.5 V,0,,,,ns
