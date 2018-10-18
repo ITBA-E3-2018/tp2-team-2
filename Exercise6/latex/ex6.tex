@@ -6,7 +6,7 @@
 \usepackage{booktabs}
 \usepackage{amsmath,amsfonts,mathtools}
 \usepackage[margin=3cm]{geometry}
-\usepackage{footmisc}
+\usepackage[bottom]{footmisc}
 
     \begin{document}
         \section{Implementation of Flip-Flop D and SR Latch with discrete logic gates}
@@ -25,14 +25,32 @@
 
         \begin{table}[ht]
             \begin{center}
-                \input{tables/e6tab1.tex}
+                \input{tables/e6tabSR.tex}
                 \label{tab:e6t1}
             \end{center}
         \end{table}
         \begin{table}[ht]
             \begin{center}
-                \input{tables/e6tab2.tex}
+                \input{tables/e6tabD.tex}
                 \label{tab:e6t2}
             \end{center}
         \end{table}
+        
+        First, in Table \ref{tab:e6t1} we can see that the operating conditions of the circuit are vastly different:
+        We can see that, for example, $V_{CC}$ has a wider operating range in the experimental circuit than the Integrated
+        circuit it is compared to. The fact that the fabricated circuit was made from more modern components than the SN54279
+        might account for this difference in operating conditions. On the other hand, the phase differences are fairly similar
+        for both circuits.
+
+        Second, in Table \ref{tab:e6t2} there are notable differences on the characteristics of the circuit:
+        the operating voltages are clearly different from those of its commercial counterpart, and the
+        delays between the input and output signals are significantly higher. Given that the fabricated device
+        has wires between each logic gate, it is expected that signals would take longer to travel between each
+        component; therefore, the delay between the input signal and the output signal will be longer in the
+        experimental circuit than in an Integrated Circuit.
+
+        From the differences observed in both devices, one can conclude that both experimentally fabricated devices can
+        be used interchangeably with their commercially available counterparts as long as they are not used in highly time-sensitive
+        conditions. Otherwise, when one is working with signals at the order of $MHz$ it is adviced to use the commercially available
+        equivalents.
     \end{document}
