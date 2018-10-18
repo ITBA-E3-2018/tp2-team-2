@@ -1,10 +1,17 @@
 \begin{tabular}{|l|l|r|r|r|r|r|r|c|}
     \toprule
-    Symbol  &Parameter  &\multicolumn{3}{c|}{74HC74}&\multicolumn{3}{c|}{Experimental}&Unit\\
-            &           &   MIN&TYP&MAX&MIN&TYP&MAX&\\
+    Symbol  &Parameter  &\multicolumn{3}{c|}{SN54279}&\multicolumn{3}{c|}{Experimental}&Unit\\
+            &           &   MIN&N/T&MAX&MIN&N/T&MAX&\\
     \midrule
-    $V_{OH}$&High-level output voltage&3.84&4.3&$-$&3,725&$V_{CC}$&$-$&V\\
-    $V_{OL}$&Low-level output voltage &$-$&0.17&0.4&$-$&-0.2&1.0875&V\\
+    $V_{CC}$&Supply Voltage&4.75&5&5.25&0.7&5&$?$&V\\
+    $V_{IH}$&High-level input voltage&2&$-$&$-$&3.79&$-$&$-$&V\\
+    $V_{IL}$&Low-level input voltage&$-$&$-$&0.8&$-$&$-$&1.35\footnote{This was assumed from the corresponding value for the 74HC08}&V\\
+    \midrule
+    $V_{OH}$&High-level output voltage&2.4&3.4&$-$&3.88&5&$-$&V\\
+    $V_{OL}$&Low-level output voltage &$-$&0.2&0.4&$-$&0&0.06&V\\
+    \midrule
+    $t_{pHL}$&Phase Difference&$-$&9&15&$-$&$-$&10&ns\\
+    $t_{pLH}$&Phase Difference&$-$&12&22&$-$&$-$&20&ns\\
     \bottomrule
 \end{tabular}
-\caption{Electrical Characteristics comparison at $V_{CC}$=4.5V}
+\caption{Comparison of measured circuit characteristics for the Latch SR}

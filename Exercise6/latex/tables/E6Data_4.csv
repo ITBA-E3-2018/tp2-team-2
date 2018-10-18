@@ -1,6 +1,0 @@
-,input,output,V CC,74HC74,,,Experimental,,,Unit
-,,,,MIN,TYP,MAX,MIN,TYP,MAX,
-f max,,,4.5 V,25,50,,,,,MHz
-t pd,nPRE or nCLR,Q or nQ,4.5 V,,20,58,,,,ns
-,CLK,Q or nQ,4.5 V,,20,44,,,,ns
-t t,,Q or nQ,4.5 V,,8,19,,,,ns

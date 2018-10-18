@@ -3,12 +3,17 @@
     Symbol  &Parameter  &\multicolumn{3}{c|}{74HC74}&\multicolumn{3}{c|}{Experimental}&Unit\\
             &           &   MIN&NOM&MAX&MIN&NOM&MAX&\\
     \midrule
-    $V_{CC}$&Supply Voltage&2&5&6&1.5&5&  &V\\
+    $V_{CC}$&Supply Voltage&2&5&6&1.5&5&$?$&V\\
     $V_{IH}$&High-level input voltage&3.15&$-$&$-$&2.64&$-$&$-$&V\\
     $V_{IL}$&Low-level input voltage&$-$&$-$&1.35&$-$&$-$&2.57&V\\
     $V_{I}$ &Input voltage&0&$-$&$V_{CC}$&0&$-$&$V_{CC}$&V\\
     $V_{O}$ &Output voltage&0&$-$&$V_{CC}$&-0.2&$-$&$V_{CC}$&V\\
     $\Delta t / \Delta v$&  Input rise and fall time&$-$&$-$&0.5&$-$&$-$&16.05&$\mu$s\\
+    \midrule
+    $V_{OH}$&High-level output voltage&3.84&4.3&$-$&3,725&$V_{CC}$&$-$&V\\
+    $V_{OL}$&Low-level output voltage &$-$&0.17&0.4&$-$&-0.2&1.0875&V\\
+    \midrule
+    $t_{pd}$&Phase Difference&$-$&20&44&$-$&28&380&ns\\  %Revise
     \bottomrule
 \end{tabular}
-\caption{Operating Conditions comparison}
+\caption{Comparison of measured circuit characteristics for the Flip-Flop D}
