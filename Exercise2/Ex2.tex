@@ -13,7 +13,7 @@
 
 \section{\color{olive}Exercise 2: The Effect of the Noise Margin}
 
-Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS02, we compare the noise margin between them and analyze the possible results when loading them with each other us follow:
+Having three different technology integrated circuits (74HC02, 74HCT02 and 74LS02), we compare the noise margin between them and analyze the possible results when loading them with each other as follows:
 
  \begin{figure}[h!]
         \centering
@@ -22,9 +22,9 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
         \label{fig:ej2circuit}
     \end{figure}
 
--Input(V): Input voltage; 
--$X$: First component name; 
--$Y$: Second component name; 
+-Input(V): Input voltage; \\
+-$X$: First component name; \\
+-$Y$: Second component name; \\
 -$q$: First result voltage; \\
 -$Q$: Final result
 
@@ -39,9 +39,9 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
         \label{fig:ej2thnm}
     \end{figure}
     
-    Within the mentioned values of power supply, the fanout of the components were: 74HC02 and 74HCT02 are 20, with $I_l =\pm1{\mu}A$ and $I_o=-20{\mu}A$; and 74LS02 is 80, with $I_l =0.1mA$ and $I_o=8mA$. As we load the components together, to avoid hurting the circuit, the maximum fanout allow shall be the minimum of the components, this is to say 20 in this case when we load HC with LS or HCT with LS. 
+    Within the mentioned values of power supply, the fanout of the components for 74HC02 and 74HCT02 is 20, with $I_l =\pm1{\mu}A$ and $I_o=-20{\mu}A$; and for 74LS02 is 80, with $I_l =0.1mA$ and $I_o=8mA$. As we load the components together, to avoid damaging the circuit, the maximum fanout allowed shall be the minimum of the components, this is to say 20 in this case when we load HC with LS or HCT with LS. 
     
-    Connecting the circuit like the figure \ref{fig:ej2cir} being $X$ the second column and $Y$ the forth column, analyzing the possible results would be:
+    Connecting the circuit like the figure \ref{fig:ej2cir} being $X$ the second column and $Y$ the forth column, analysing the possible results would be:
 
 	\begin{center}
 	\hspace{2cm}\begin{table}[h!]
@@ -113,11 +113,11 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
 	
 	\pagebreak
 	
-	Therefore we expect when loading the components there will be are some irregularities in the Q output value when the input value aren't the recommended in the data-sheet. 
+	Therefore, we expect, when loading the components, irregularities in the Q output value when the input value isn't the recommended in the data-sheet. 
 
 	\subsection{\color{purple}Experimentally}
 	
-	Building the circuit in the figure \ref{fig:ej2cir} with the power supply to the integrated circuits equal to 5V with a square signal, altering its maximum value. The measured result were:
+	Building the circuit in the figure \ref{fig:ej2cir}, with a squeare 0-5V signal, the measured results are:
 	
 	\begin{figure}[h!]
         \centering
@@ -182,6 +182,6 @@ Having three different technology integrated circuits, 74HC02, 74HCT02 and 74LS0
     
     \pagebreak
 
-	Analyzing the results in $Q$ it is clear that the irregularities are odd to find, this could be because the manufacturer always leaves a bigger margin to ovoid conflicts within each unique component. Moreover as mention in the theoretical table when the input voltage isn't a logical input, in other words the supply voltage is in the prohibited zone because the circuit cannot decide if the the value of the voltage is low or high, the output value $q$ could mean something in the second component leading to misunderstandings or errors in the logical function. In the other hand, we can notice that using the HCT with the LS integrated circuits, their irregularity is lower in amplitude and not so define as HC with LS, cause their input noise margin are similar. 
+	Analysing the results in $Q$ it is clear that the irregularities are odd to find, this could be because the manufacturer always leaves a bigger margin to avoid conflicts within each component. Moreover, as mentioned in the theoretical table when the input voltage isn't a logical input, the supply voltage is in the prohibited zone because the circuit cannot decide if the value of the voltage is low or high, the output value $q$ could mean something in the second component leading to misunderstandings or errors in the logical function. On the other hand, we can notice that using the HCT with the LS integrated circuits, their irregularity is lower in amplitude and not so defined as HC with LS, because their input noise margins are similar. 
 
 %\end{document}
