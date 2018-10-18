@@ -1,21 +1,21 @@
-\documentclass[a4paper]{article}
-\usepackage{graphicx}
+%\documentclass[a4paper]{article}
+%\usepackage{graphicx}
 %\usepackage{siunitx}
-\usepackage{csvsimple}
-\usepackage{multirow}
-\usepackage{booktabs}
-\usepackage{amsmath,amsfonts,mathtools}
-\usepackage[margin=3cm]{geometry}
-\usepackage[bottom]{footmisc}
+%\usepackage{csvsimple}
+%\usepackage{multirow}
+%\usepackage{booktabs}
+%\usepackage{amsmath,amsfonts,mathtools}
+%\usepackage[margin=3cm]{geometry}
+%\usepackage[bottom]{footmisc}
 
-    \begin{document}
-        \section{Implementation of Flip-Flop D and SR Latch with discrete logic gates}
+ %   \begin{document}
+        \section{\color{olive}Exercise 6: Implementation of Flip-Flop D and SR Latch with discrete logic gates}
         Using the schematic on Figure \ref{fig:Schem} the logic gates were implemented on a PCB.
         
         \begin{figure}[h!]
             \begin{center}
-                \includegraphics[width=\linewidth]{e6Schem.png}
-                \caption{Schematic of the  SR Latch (on the left) and Flip-Flop D (on the right)}
+                \includegraphics[width=\linewidth]{../Exercise6/latex/e6Schem.png}
+                \caption{\color{cyan}Schematic of the  SR Latch (on the left) and Flip-Flop D (on the right)}
             \end{center}
             \label{fig:Schem}
         \end{figure}
@@ -23,15 +23,15 @@
         The resulting circuits were tested and compared to their resulting counterparts as shown in
         Table \ref{tab:e6t1} and Table \ref{tab:e6t2}.
 
-        \begin{table}[ht]
+        \begin{table}[h!]
             \begin{center}
-                \input{tables/e6tabSR.tex}
+                \input{../Exercise6/latex/tables/e6tabSR.tex}
                 \label{tab:e6t1}
             \end{center}
         \end{table}
-        \begin{table}[ht]
+        \begin{table}[h!]
             \begin{center}
-                \input{tables/e6tabD.tex}
+                \input{../Exercise6/latex/tables/e6tabD.tex}
                 \label{tab:e6t2}
             \end{center}
         \end{table}
@@ -53,4 +53,4 @@
         be used interchangeably with their commercially available counterparts as long as they are not used in highly time-sensitive
         conditions. Otherwise, when one is working with signals at the order of $MHz$ it is adviced to use the commercially available
         equivalents.
-    \end{document}
+    %\end{document}
