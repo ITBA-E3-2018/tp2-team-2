@@ -762,6 +762,16 @@ Clock
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "8_8"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -895,42 +905,11 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-PCB Top Layer
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
+ 
 \begin_inset Graphics
 	filename images/BOT.jpg
 	lyxscale 10
-	scale 20
+	scale 16
 
 \end_inset
 
@@ -941,7 +920,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-PCB Bottom Layer
+PCB Top and Bottom Layer
 \end_layout
 
 \end_inset
@@ -989,6 +968,89 @@ Distance=\frac{n.80}{58}(cm)
 \begin_layout Standard
 Where the number 80 comes from the clock speed and the 58 from the formula
  given from the sensor.
+\end_layout
+
+\begin_layout Subsection
+Simulation
+\end_layout
+
+\begin_layout Standard
+For the simulation a counter with the logic shown on Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_7"
+
+\end_inset
+
+ and the clock of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_8"
+
+\end_inset
+
+ was made.
+ This was accomplished by writeng hardware descriptive code on verilo and
+ simulated on GTK wave.
+ The results were as shown on Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "8_13"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/Count simulation.png
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Verilog Simulation
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "8_13"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we've seen, the circuits makes what we were expecting, so we conclude
+ that everyting should work ok on the real implementation.
 \end_layout
 
 \begin_layout Subsection

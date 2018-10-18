@@ -210,6 +210,8 @@ Since it made no such big difference, we left it that way.
 \par\end{centering}
 \caption{Clock}
 
+\label{8_8}
+
 \end{figure}
 
 \paragraph{Visual Output}
@@ -244,17 +246,9 @@ created the design shown on Figure \ref{8_9}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.05]{images/TOP}
+\includegraphics[scale=0.05]{images/TOP} \includegraphics[scale=0.16]{images/BOT}
 \par\end{centering}
-\caption{PCB Top Layer}
-
-\end{figure}
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[scale=0.2]{images/BOT}
-\par\end{centering}
-\caption{PCB Bottom Layer}
+\caption{PCB Top and Bottom Layer}
 
 \end{figure}
 
@@ -273,6 +267,25 @@ Distance=\frac{n.80}{58}(cm)
 
 Where the number 80 comes from the clock speed and the 58 from the
 formula given from the sensor.
+
+\subsection{Simulation}
+
+For the simulation a counter with the logic shown on Figure \ref{8_7}
+and the clock of Figure \ref{8_8} was made. This was accomplished
+by writeng hardware descriptive code on verilo and simulated on GTK
+wave. The results were as shown on Figure \ref{8_13}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{\string"images/Count simulation\string".eps}
+\par\end{centering}
+\caption{Verilog Simulation}
+\label{8_13}
+
+\end{figure}
+
+As we've seen, the circuits makes what we were expecting, so we conclude
+that everyting should work ok on the real implementation.
 
 \subsection{Conclusions}
 
